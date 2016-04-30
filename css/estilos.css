@@ -36,6 +36,10 @@ body {
 	width: 30%;
 }
 
+#corp-client {
+	display: none;
+}
+
 .submit {
 	margin-left: 44%;
 }
