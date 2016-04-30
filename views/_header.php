@@ -27,22 +27,16 @@ $url_actual = $_SERVER['REQUEST_URI'];
     <meta name="author" content="">
     <?php
     echo '
-    <link rel="icon" href="'.$site_url.'/favicon.png">';
-    ?>
+    <link rel="icon" href="'.$site_url.'/favicon.png">
 
     <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="'.$site_url.'/css/bootstrap.min.css" rel="stylesheet">
     <!-- Bootstrap theme -->
-    <link href="css/bootstrap-theme.min.css" rel="stylesheet">
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <link href="css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+    <link href="'.$site_url.'/css/bootstrap-theme.min.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="css/estilos.css" rel="stylesheet">
-
-    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
-    <!--[if lt IE 9]><script src="js/ie8-responsive-file-warning.js"></script><![endif]-->
-    <script src="js/ie-emulation-modes-warning.js"></script>
+    <link href="'.$site_url.'/css/estilos.css" rel="stylesheet">';
+    ?>
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 
@@ -81,8 +75,10 @@ $url_actual = $_SERVER['REQUEST_URI'];
               </li>
             <?php
             echo '
-            <li'; if (strpos($url_actual, 'register.php') !== false) echo ' class="active"'; echo '><a href="'.$site_url.'/register.php">Registrarse</a></li>
-            <li'; if (strpos($url_actual, 'login.php') !== false) echo ' class="active"'; echo '><a href="'.$site_url.'/login.php">Iniciar sesión</a></li>';
+            <li'; if (strpos($url_actual, 'register.php') !== false or strpos($url_actual, 'registro') !== false) echo ' class="active"'; echo '><a href="'.$site_url.'/registro">Registrarse</a></li>
+            <li'; if (strpos($url_actual, 'login.php') !== false or strpos($url_actual, 'iniciar-sesion') !== false) echo ' class="active"'; echo '><a href="'.$site_url.'/iniciar-sesion">Iniciar sesión</a></li>';
+            echo '            
+            <li'; if (strpos($url_actual, 'planes-de-lavado') !== false) echo ' class="active"'; echo '><a href="'.$site_url.'/clientes/planes-de-lavado">Registrar turno</a></li>';
             ?>
           </ul>
           <form class="navbar-form navbar-right" role="search">
