@@ -13,13 +13,14 @@
  *          by the way, it's bad style to use "root", but for development it will work.
  * DB_PASS: the password of the above user
  */
-define("DB_HOST", "us-cdbr-azure-west-c.cloudapp.net");
+define("DB_HOST", "br-cdbr-azure-south-b.cloudapp.net");
 define("DB_NAME", "washapp");
-define("DB_USER", "b211b5b2889008");
-define("DB_PASS", "f2859106");
+define("DB_USER", "b53ea370c4f981");
+define("DB_PASS", "13861f96");
 
 // URL del sitio donde se instala
 $site_url = "http://washapp.azurewebsites.net";
+// $site_url = "http://localhost";
 
 /**
  * Configuration for: Cookies
