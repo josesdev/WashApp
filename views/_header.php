@@ -10,12 +10,18 @@ $url_actual = $_SERVER['REQUEST_URI'];
     <meta charset="UTF-8">
     <?php
     // Titulos de las diferentes paginas
-    if (strpos($url_actual, 'login.php') !== false)
+    if (strpos($url_actual, 'login.php') !== false or strpos($url_actual, 'iniciar-sesion') !== false)
     echo '
     <title>WashApp - Ingresar</title>';
-    elseif (strpos($url_actual, 'register.php') !== false)
+    elseif (strpos($url_actual, 'register.php') !== false or strpos($url_actual, 'registro') !== false)
     echo '
     <title>WashApp - Registrar cliente</title>';
+    elseif (strpos($url_actual, 'registrar-turno') !== false)
+    echo '
+    <title>WashApp - Registrar turno de lavado</title>';
+    elseif (strpos($url_actual, 'solicitar-plan') !== false)
+    echo '
+    <title>WashApp - Solicitar plan de lavado</title>';
     else
       echo '
       <title>WashApp</title>';
@@ -35,10 +41,17 @@ $url_actual = $_SERVER['REQUEST_URI'];
     <link href="'.$site_url.'/css/bootstrap-theme.min.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="'.$site_url.'/css/estilos.css" rel="stylesheet">';
-    ?>
+    <link href="'.$site_url.'/css/estilos.css" rel="stylesheet">
     
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>';
+
+    // JQuery Select & JQuery UI
+    echo '
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.10.0/css/bootstrap-select.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.10.0/js/bootstrap-select.min.js"></script>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>';
+    ?>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -78,7 +91,8 @@ $url_actual = $_SERVER['REQUEST_URI'];
             <li'; if (strpos($url_actual, 'register.php') !== false or strpos($url_actual, 'registro') !== false) echo ' class="active"'; echo '><a href="'.$site_url.'/registro">Registrarse</a></li>
             <li'; if (strpos($url_actual, 'login.php') !== false or strpos($url_actual, 'iniciar-sesion') !== false) echo ' class="active"'; echo '><a href="'.$site_url.'/iniciar-sesion">Iniciar sesión</a></li>';
             echo '            
-            <li'; if (strpos($url_actual, 'planes-de-lavado') !== false) echo ' class="active"'; echo '><a href="'.$site_url.'/clientes/planes-de-lavado">Registrar turno</a></li>';
+            <li'; if (strpos($url_actual, 'registrar-turno') !== false) echo ' class="active"'; echo '><a href="'.$site_url.'/clientes/registrar-turno">Registrar turno</a></li>
+            <li'; if (strpos($url_actual, 'solicitar-plan') !== false) echo ' class="active"'; echo '><a href="'.$site_url.'/clientes/solicitar-plan">Solicitar plan</a></li>';
             ?>
           </ul>
           <form class="navbar-form navbar-right" role="search">

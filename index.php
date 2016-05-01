@@ -26,7 +26,11 @@ $login = new Login();
 
 // Segun la accion que quiera realizar incluimos un archivo u otro
 if(isset($_GET['action'])) {
-    if ($_GET['action'] == 'plans') {
+    if ($_GET['action'] == 'registrar-turno') {
+        include("views/turn.php");
+    }
+    else
+    if ($_GET['action'] == 'solicitar-plan') {
         include("views/plans.php");
     }
 }

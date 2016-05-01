@@ -10,7 +10,7 @@
     <input id="user_password" class="form-control" type="password" name="user_password" autocomplete="off" required />
     <input type="checkbox" id="user_rememberme" name="user_rememberme" value="1" />
     <label for="user_rememberme" class="col-lg-4 control-label">No cerrar sesión</label>
-    <input type="submit" class="btn btn-default submitL" name="login" value="Iniciar sesión" />
+    <input type="submit" class="btn btn-success submitL" name="login" value="Iniciar sesión" />
 </div>
 </form>
 <div style="text-align: center;">

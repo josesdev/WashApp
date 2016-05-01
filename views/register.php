@@ -54,7 +54,7 @@
     <label for="captcha" class="col-lg-4 control-label"></label>
     <input id="captcha" type="text" class="form-control" name="captcha" required />
 
-    <input type="submit" class="btn btn-default submit" name="register" value="Registrarme" />
+    <input type="submit" class="btn btn-success submit" name="register" value="Registrarme" />
 </div>
 
 <script type="text/javascript">
