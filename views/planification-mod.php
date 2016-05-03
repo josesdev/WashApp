@@ -2,7 +2,7 @@
 require_once(__ROOT__.'/config.php'); 
 ?>
 
-<h3 class="center">Solicitar plan de lavado</h3>
+<h3 class="center">Modificar plan de lavado</h3>
 
 <form method="post" action="/" name="loginform">
 <div class="form-group register">
@@ -14,17 +14,17 @@ require_once(__ROOT__.'/config.php');
         <option>Camión</option>
     </select>
     <label for="wash_vehicles_cant" class="col-lg-4 control-label">Cantidad</label>
-    <input type="text" class="form-control" id="wash_vehicles_cant"></input>
+    <input type="text" class="form-control" id="wash_vehicles_cant" value="25"></input>
     <label for="user_name" class="col-lg-4 control-label">Tipo de lavado</label>
     <select class="selectpicker" name="type_vehicle">
 	    <option>Básico</option>
-	    <option>Completo</option>
+	    <option selected="selected">Completo</option>
 	    <option>Ecológico</option>
     </select>
     <label for="wash_period" class="col-lg-4 control-label">Periodicidad</label>
     <div id="period">
         <select class="selectpicker" name="wash_day">
-            <option id="day1">1 día a la semana</option>
+            <option id="day1" selected="selected">1 día a la semana</option>
             <option id="day2">2 días a la semana</option>
             <option id="day3">3 días a la semana</option>
         </select>
@@ -88,7 +88,7 @@ require_once(__ROOT__.'/config.php');
       <li class="list-group-item list-group-item-warning l">Recuerde que su plan de lavado será evaluado y un operador se comunicará con Usted dentro de las 48 hs.</li>
     </ul>
 
-    <input type="submit" class="btn btn-success submitL" name="login" value="Registrar plan" />
+    <input type="submit" class="btn btn-success submitL" name="login" value="Modificar plan" />
 </div>
 </form>
 

@@ -4,5 +4,7 @@ RewriteEngine on
 # RewriteRule ^(.*)$ http://www.lunite.net/$1 [L,R=301]
 Rewriterule ^clientes/registrar-turno index.php?action=registrar-turno
 Rewriterule ^clientes/solicitar-plan index.php?action=solicitar-plan
+Rewriterule ^clientes/planificar-plan index.php?action=planificar-plan
+Rewriterule ^clientes/modificar-plan index.php?action=modificar-plan
 Rewriterule ^iniciar-sesion login.php
 Rewriterule ^registro register.php

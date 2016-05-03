@@ -15,11 +15,11 @@ require_once(__ROOT__.'/config.php');
     </select>
     <label class="col-lg-4 control-label">Lugar de lavado</label>
     <div class="client">
-        <input type="radio" name="type_place" id="type_sucursal" checked="checked"> <label for="type_sucursal" class="cl">Sucursal</label>
+        <input type="radio" name="type_place" id="type_sucursal" checked="checked"> <label for="type_sucursal" class="cl">Centro de lavado</label>
         <input type="radio" name="type_place" id="type_movil"> <label for="type_movil" class="cl">Estación móvil</label>
     </div>
     <div id="Tsucursal">
-    <label for="wash_place" class="col-lg-4 control-label">Sucursal</label>
+    <label for="wash_place" class="col-lg-4 control-label">Centro de lavado</label>
     <select class="selectpicker" data-size="5">
 	  <option data-subtext="French 414, Resistencia">WashApp Centro</option>	  
 	  <option data-subtext="Av. Sarmiento 2855, Resistencia">WashApp Centenario</option>
@@ -42,7 +42,7 @@ require_once(__ROOT__.'/config.php');
 	  <option>11:00</option>
 	</select>
 
-    <input type="submit" class="btn btn-success submitL" name="login" value="Registrar" />
+    <input type="submit" class="btn btn-success submitL" name="login" value="Registrar turno" />
 </div>
 </form>
 

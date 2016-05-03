@@ -33,6 +33,14 @@ if(isset($_GET['action'])) {
     if ($_GET['action'] == 'solicitar-plan') {
         include("views/plans.php");
     }
+    else
+    if ($_GET['action'] == 'planificar-plan') {
+        include("views/planification.php");
+    }
+    else
+    if ($_GET['action'] == 'modificar-plan') {
+        include("views/planification-mod.php");
+    }
 }
 // Si no hay accion mostramos el archivo para clientes logueados y no logueados
 else {

@@ -11,6 +11,10 @@ body {
 	display: none;
 }
 
+.bold {
+	font-weight: bold;
+}
+
 .center {
 	text-align: center;
 }
@@ -46,6 +50,15 @@ body {
 .form-group.register ul.list-group li {
 	text-align: center;
 }
+
+.form-group.register ul.list-group li.m {
+	margin-bottom: 1.2%;
+}
+
+.form-group.register ul.list-group li.l {
+	margin-top: 1.2%;
+}
+
 
 .form-group .client {
 	float: left;
