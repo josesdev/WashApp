@@ -32,6 +32,12 @@ require_once(__ROOT__.'/config.php');
 		<label for="wash_adreess" class="col-lg-4 control-label">Dirección</label>
     	<input type="text" class="form-control" id="wash_adreess"></input>
 	</div>
+	<label for="user_name" class="col-lg-4 control-label">Tipo de lavado</label>
+    <select class="selectpicker" name="type_vehicle">
+	    <option>Básico</option>
+	    <option>Completo</option>
+	    <option>Ecológico</option>
+    </select>
     <label for="wash_day" class="col-lg-4 control-label">Fecha</label>
     <input type="text" class="form-control" id="wash_day"></input>
     <label for="wash_hour" class="col-lg-4 control-label">Hora</label>

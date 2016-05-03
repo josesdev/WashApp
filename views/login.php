@@ -13,8 +13,11 @@
     <input type="submit" class="btn btn-success submitL" name="login" value="Iniciar sesión" />
 </div>
 </form>
+<?php 
+echo'
 <div style="text-align: center;">
-	<a href="register.php">Registrar nueva cuenta</a> - 
-	<a href="password_reset.php">Recuperar contraseña</a>
+	<a href="'.$site_url.'/registro">Registrar nueva cuenta</a> - 
+	<a href="'.$site_url.'/recuperar-contrasena">Recuperar contraseña</a>
 </div>
-<?php include('_footer.php'); ?>
+';
+include('_footer.php'); ?>

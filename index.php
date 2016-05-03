@@ -41,6 +41,22 @@ if(isset($_GET['action'])) {
     if ($_GET['action'] == 'modificar-plan') {
         include("views/planification-mod.php");
     }
+    else
+    if ($_GET['action'] == 'mis-turnos') {
+        include("views/turns-view.php");
+    }
+    else
+    if ($_GET['action'] == 'tipos-de-lavado') {
+        include("views/wash_types.php");
+    }
+    else
+    if ($_GET['action'] == 'agregar-tipo-de-lavado') {
+        include("views/wash_types_add.php");
+    }
+    else
+    if ($_GET['action'] == 'editar-tipo-de-lavado') {
+        include("views/wash_types_edit.php");
+    }
 }
 // Si no hay accion mostramos el archivo para clientes logueados y no logueados
 else {
