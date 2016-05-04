@@ -66,7 +66,6 @@ body {
 	margin-top: 1.2%;
 }
 
-
 .form-group .client {
 	float: left;
 	margin: 6px 0;
@@ -112,4 +111,35 @@ body {
 
 .desc li{
 	list-style-type: none; 
+}
+
+.tit { color: #006622;
+	font-size: 20px;
+	line-height: 40px;
+	display: block;
+	text-align: center;
+	margin-top: 0px;
+}
+
+hr { 
+ height: 30px;
+ border-style: solid;
+ border-color: #BFBFBF;
+ border-width: 1.8px 0 0 0;
+ border-radius: 20px;
+ text-align: center;
+ margin-left: 200px;
+ margin-right: 200px;
+ margin-top: -8px;
+ margin-bottom: -10px;
+
+}
+
+.forma { margin-top: -12px;
+	     margin-bottom: -5px;
+	     line-height: 22px;
+	     margin-left:225px;
+	     margin-right: 225px;
+	     text-align: justify;
+
 }

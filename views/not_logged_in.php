@@ -2,6 +2,42 @@
 require_once(__ROOT__.'/config.php'); 
 ?>
 
+<link rel="stylesheet" type="text/css" href="css/estilos.css">
+<script type="text/javascript">
+  function desplegar(unvalor) {
+    var obj = document.getElementById(unvalor);
+    if (obj.style.display == "none") obj.style.display="block";
+      else obj.style.display = "none";
+  }
+</script>
+
+<a href="javascript:void(0)" onclick="desplegar('ver0');" class="tit"> Sobre nosotros </a>
+<hr />
+<p id="ver0" class="forma"> Somos una empresa dedicada al lavado de coches, nuestro objetivo es ofrecerte el mejor servicio. Para ello permitimos elegir el horario y dia que mejor se adapte a usted y el tipo de lavado adecuado para que tu auto reluzca!</p>
+<a href="javascript:void(0)" onclick="desplegar('ver1');" class="tit"> Sucursales </a>
+<hr />
+<div id="ver1" style="display: none;" class="forma">
+  <p><b> WashApp Centro</b> French 414, Resistencia </p>
+  <p><b> WashApp Sarmiento</b> Av. Sarmiento 2855, Resistencia </p>
+  <p><b> WashApp 2</b> Lopez y Planes 75, Resistencia </p>
+  <p><b> WashApp 2</b> Corrientes</p>
+</div>
+<a href="javascript:void(0)" onclick="desplegar('ver2');" class="tit"> Tipos de lavado </a>
+<hr />
+<div id="ver2" style="display: none;" class="forma">
+  <p> Básico </p>
+  <p> Completo </p>
+  <p> Ecológico </p>
+</div>
+<a href="javascript:void(0)" onclick="desplegar('ver3');" class="tit"> Formas de pago </a>
+<hr />
+<div id="ver3" style="display: none;" class="forma">
+  <p> Contado </p>
+  <p> Tarjeta insertenombre </p>
+  <p> Otra tarjeta </p>
+</div>
+<br /> <br />
+
 <div id="myCarousel" class="carousel slide" data-ride="carousel">
   <!-- Indicators -->
   <ol class="carousel-indicators">
