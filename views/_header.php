@@ -45,6 +45,10 @@ $url_actual = $_SERVER['REQUEST_URI'];
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>';
 
+    if (strpos($url_actual, 'lista-empleados') !== false)
+    echo '
+    <link rel="stylesheet" href="http://onehackoranother.com/projects/jquery/tipsy/stylesheets/tipsy.css" type="text/css" />';
+
     // JQuery Select & JQuery UI
     echo '
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.10.0/css/bootstrap-select.min.css">
@@ -112,6 +116,14 @@ $url_actual = $_SERVER['REQUEST_URI'];
                 <li'; if (strpos($url_actual, 'tipos-de-lavado') !== false) echo ' class="active"'; echo '><a href="'.$site_url.'/tipos-de-lavado">Ver tipos de lavado</a></li>
                 <li'; if (strpos($url_actual, 'agregar-tipo-de-lavado') !== false) echo ' class="active"'; echo '><a href="'.$site_url.'/agregar-tipo-de-lavado">Agregar tipo</a></li>
                 <li'; if (strpos($url_actual, 'editar-tipo-de-lavado') !== false) echo ' class="active"'; echo '><a href="'.$site_url.'/editar-tipo-de-lavado">Editar tipo</a></li>
+              </ul>
+            </li>            
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Empleados <span class="caret"></span></a>
+              <ul class="dropdown-menu active">
+                <li'; if (strpos($url_actual, 'lista-empleados') !== false) echo ' class="active"'; echo '><a href="'.$site_url.'/lista-empleados">Lista de empleados</a></li>
+                <li'; if (strpos($url_actual, 'agregar-empleado') !== false) echo ' class="active"'; echo '><a href="'.$site_url.'/agregar-empleado">Agregar</a></li>
+                <li'; if (strpos($url_actual, 'editar-empleado') !== false) echo ' class="active"'; echo '><a href="'.$site_url.'/editar-empleado">Editar</a></li>
               </ul>
             </li>';
             ?>

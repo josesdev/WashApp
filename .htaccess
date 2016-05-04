@@ -10,6 +10,9 @@ Rewriterule ^clientes/mis-turnos index.php?action=mis-turnos
 Rewriterule ^tipos-de-lavado index.php?action=tipos-de-lavado
 Rewriterule ^agregar-tipo-de-lavado index.php?action=agregar-tipo-de-lavado
 Rewriterule ^editar-tipo-de-lavado index.php?action=editar-tipo-de-lavado
+Rewriterule ^lista-empleados index.php?action=lista-empleados
+Rewriterule ^agregar-empleado index.php?action=agregar-empleado
+Rewriterule ^editar-empleado index.php?action=editar-empleado
 Rewriterule ^iniciar-sesion login.php
 Rewriterule ^registro register.php
 Rewriterule ^recuperar-contrasena password_reset.php

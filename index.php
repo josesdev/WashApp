@@ -57,6 +57,18 @@ if(isset($_GET['action'])) {
     if ($_GET['action'] == 'editar-tipo-de-lavado') {
         include("views/wash_types_edit.php");
     }
+    else
+    if ($_GET['action'] == 'lista-empleados') {
+        include("views/employees.php");
+    }
+    else
+    if ($_GET['action'] == 'agregar-empleado') {
+        include("views/employees_add.php");
+    }
+    else
+    if ($_GET['action'] == 'editar-empleado') {
+        include("views/employees_edit.php");
+    }
 }
 // Si no hay accion mostramos el archivo para clientes logueados y no logueados
 else {

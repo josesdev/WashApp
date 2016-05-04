@@ -66,7 +66,9 @@ $(document).on("click", ".alert-box", function(e) {
 });
 $(document).on("click", ".alert-box2", function(e) {
     bootbox.confirm("¿Estás seguro que quieres cancelar el turno?", function(result) {
+        if(result == true) {
         $("#plan-elim").hide(800);
+        }
     }); 
 });
 </script>
