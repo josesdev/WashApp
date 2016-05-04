@@ -33,7 +33,7 @@ require_once(__ROOT__.'/config.php');
                 <td>ema_lavagancia95@hotmail.com</td>
                 <td>3624234354</td>
                 <td style="text-align: center;">
-                    <a href="'.$site_url.'/editar-empleado" original-title="Editar"><span class="glyphicon glyphicon-edit"></span></a>
+                    <a href="'.$site_url.'/editar-empleado" class="alert-box" original-title="Editar"><span class="glyphicon glyphicon-edit"></span></a>
                     <a href="#" onclick="alert_box(\'emp1\');" class="alert-box" original-title="Eliminar"><span class="glyphicon glyphicon-remove"></span></a>
                 </td>
               </tr>
@@ -47,7 +47,7 @@ require_once(__ROOT__.'/config.php');
                 <td>emiandmery@outlook.com</td>
                 <td>3624234324</td>
                 <td style="text-align: center;">
-                    <a href="'.$site_url.'/editar-empleado" original-title="Editar"><span class="glyphicon glyphicon-edit"></span></a>
+                    <a href="'.$site_url.'/editar-empleado" class="alert-box" original-title="Editar"><span class="glyphicon glyphicon-edit"></span></a>
                     <a href="#" onclick="alert_box(\'emp2\');" class="alert-box" original-title="Eliminar"><span class="glyphicon glyphicon-remove"></span></a>
                 </td>
               </tr>
@@ -61,7 +61,7 @@ require_once(__ROOT__.'/config.php');
                 <td>kari_the_explosion@gmail.com</td>
                 <td>3794560322</td>
                 <td style="text-align: center;">
-                    <a href="'.$site_url.'/editar-empleado" original-title="Editar"><span class="glyphicon glyphicon-edit"></span></a>
+                    <a href="'.$site_url.'/editar-empleado" class="alert-box" original-title="Editar"><span class="glyphicon glyphicon-edit"></span></a>
                     <a href="#" onclick="alert_box(\'emp3\');" class="alert-box" original-title="Eliminar"><span class="glyphicon glyphicon-remove"></span></a>
                 </td>
               </tr>
@@ -75,7 +75,7 @@ require_once(__ROOT__.'/config.php');
                 <td>the_helecho22@outlook.com</td>
                 <td>3704543233</td>
                 <td style="text-align: center;">
-                    <a href="'.$site_url.'/editar-empleado" original-title="Editar"><span class="glyphicon glyphicon-edit"></span></a>
+                    <a href="'.$site_url.'/editar-empleado" class="alert-box" original-title="Editar"><span class="glyphicon glyphicon-edit"></span></a>
                     <a href="#" onclick="alert_box(\'emp4\');" class="alert-box" original-title="Eliminar"><span class="glyphicon glyphicon-remove"></span></a>
                 </td>
               </tr>
@@ -89,7 +89,7 @@ require_once(__ROOT__.'/config.php');
                 <td>machine_programmer@lunite.net</td>
                 <td>3704433445</td>
                 <td style="text-align: center;">
-                    <a href="'.$site_url.'/editar-empleado" original-title="Editar"><span class="glyphicon glyphicon-edit"></span></a>
+                    <a href="'.$site_url.'/editar-empleado" class="alert-box" original-title="Editar"><span class="glyphicon glyphicon-edit"></span></a>
                     <a href="#" onclick="alert_box(\'emp5\');" class="alert-box" original-title="Eliminar"><span class="glyphicon glyphicon-remove"></span></a>
                 </td>
               </tr>
