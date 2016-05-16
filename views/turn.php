@@ -6,7 +6,7 @@ require_once(__ROOT__.'/config.php');
 
 <form method="post" action="index.php?action=registrar-turno" name="loginform">
 <div class="form-group register">
-    <label for="user_name" class="col-lg-4 control-label">Tipo de vehículo</label>
+    <label for="user_name" class="col-lg-4 control-label">Informe por sucursal</label>
     <select class="selectpicker" name="type_vehicle">
 	    <option>Pickup</option>
 	    <option>Sedán</option>

@@ -16,3 +16,5 @@ Rewriterule ^editar-empleado index.php?action=editar-empleado
 Rewriterule ^iniciar-sesion login.php
 Rewriterule ^registro register.php
 Rewriterule ^recuperar-contrasena password_reset.php
+Rewriterule ^informes index.php?action=informes
+Rewriterule ^informes-clientes index.php?action=informes-clientes
