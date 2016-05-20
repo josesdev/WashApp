@@ -19,8 +19,8 @@ define("DB_USER", "b485c99990be12");
 define("DB_PASS", "687bbed8");
 
 // URL del sitio donde se instala
-// $site_url = "http://washapp.azurewebsites.net";
-$site_url = "http://localhost/washapp";
+$site_url = "http://washapp.azurewebsites.net";
+// $site_url = "http://localhost/washapp";
 
 /**
  * Configuration for: Cookies
