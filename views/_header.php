@@ -154,7 +154,7 @@ $url_actual = $_SERVER['REQUEST_URI'];
               <ul class="dropdown-menu active">
 			  <?php
 			  echo '
-			  
+
                 <li'; if (strpos($url_actual, 'informes-clientes') !== false) echo ' class="active"'; echo '><a href="'.$site_url.'/informes-clientes">Clientes</a></li>
                 <li><a href="/lista.html">Empleados</a></li>
                 <li role="separator" class="divider"></li>
