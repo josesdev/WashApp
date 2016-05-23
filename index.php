@@ -58,6 +58,14 @@ if(isset($_GET['action'])) {
         include("views/wash_types_edit.php");
     }
     else
+    if ($_GET['action'] == 'informes-clientes') {
+        include("views/customers.php");
+    }
+    else
+    if ($_GET['action'] == 'informes') {
+        include("views/reports.php");
+    }
+    else
     if ($_GET['action'] == 'lista-empleados') {
         include("views/employees.php");
     }
