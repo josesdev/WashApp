@@ -77,6 +77,18 @@ if(isset($_GET['action'])) {
     if ($_GET['action'] == 'editar-empleado') {
         include("views/employees_edit.php");
     }
+    else
+    if ($_GET['action'] == 'operador-agregar-turno') {
+        include("views/operator-add-turn.php");
+    }
+    else
+    if ($_GET['action'] == 'operador-agregar-plan') {
+        include("views/operator-add-plan.php");
+    }
+    else
+    if ($_GET['action'] == 'operador-ver-turnos') {
+        include("views/operator-turns-view.php");
+    }
 }
 // Si no hay accion mostramos el archivo para clientes logueados y no logueados
 else {

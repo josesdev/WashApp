@@ -1,6 +1,11 @@
 body {
   background-color: #f6f8fa;
   background-image: url("../images/bg.png");
+  padding-top: 90px;
+}
+
+.no-margin-top {
+  margin-top: 0!important;
 }
 
 .displayB {
@@ -19,11 +24,25 @@ body {
 	text-align: center;
 }
 
-.container.theme-showcase{
-	background: rgba(255, 255, 255, 0.4);
-	-webkit-border-radius: 10px;
-	-moz-border-radius: 10px;
-	border-radius: 10px;
+.navbar .dropdown-menu li.active > a:focus, .navbar .dropdown-menu li.active > a:hover {
+  background-color: #eee;
+  color: #009688!important;
+}
+
+.form-group .checkbox label, .form-group .radio label, .form-group label {
+  color: #a0a0a0;
+}
+
+.form-group {
+  margin-top: 8px;
+}
+
+.form-group label.control-label {
+  font-size: 14px;
+}
+
+.container .navbar-collapse{
+	font-size: 16px;
 }
 
 .form-group.register .form-control {
@@ -35,6 +54,10 @@ body {
 	padding-top: 8px;
 	margin-left: 10%;
 	text-align: right;
+}
+
+.form-group label {
+  font-size: 14px!important;
 }
 
 .form-group.register label.cl {
@@ -66,29 +89,21 @@ body {
 	margin-top: 1.2%;
 }
 
+<<<<<<< HEAD
+=======
 .form-group .client {
 	float: left;
 	margin: 6px 0;
 	width: 50%;
 }
 
+>>>>>>> origin/master
 #corp-client {
 	display: none;
 }
 
-.submit {
-	margin-left: 44%;
-}
-
-.submitL {
-	display: block;
-	margin-top: 15px;
-	margin-left: 44%;
-}
-
 .btn-group.bootstrap-select {
 	margin-bottom: 1.3%!important;
-	margin-right: 200px;
 }
 
 .icon {
@@ -98,7 +113,7 @@ body {
 }
 
 .iconPre {
-	font-size: 2em;	
+	font-size: 2em;
 	text-align: left;
 	width: 30%;
 	margin-bottom: 1.2%;
@@ -110,6 +125,22 @@ body {
 }
 
 .desc li{
+<<<<<<< HEAD
+	list-style-type: none;
+}
+
+.datepicker {
+  z-index: 9999!important;
+}
+
+.alert.plan {
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.btn-group.bootstrap-select {
+  border: 1px solid #f0f0f0;
+=======
 	list-style-type: none; 
 }
 
@@ -142,4 +173,5 @@ hr {
 	     margin-right: 225px;
 	     text-align: justify;
 
+>>>>>>> origin/master
 }

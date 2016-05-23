@@ -2,7 +2,11 @@
 
 <?php
 echo '
-    <script src="'. $site_url .'/js/bootstrap.min.js"></script>';
+<script>
+	$(function () {
+		$.material.init();
+	});
+</script>';
 ?>
 </body>
 </html>
