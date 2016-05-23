@@ -145,23 +145,6 @@ $url_actual = $_SERVER['REQUEST_URI'];
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
-            <li class="dropdown">
-<<<<<<< HEAD
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Esto se va <span class="caret"></span></a>
-=======
-              <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Informes <span class="caret"></span></a>
->>>>>>> refs/remotes/origin/master
-              <ul class="dropdown-menu active">
-			  <?php
-			  echo '
-
-                <li'; if (strpos($url_actual, 'informes-clientes') !== false) echo ' class="active"'; echo '><a href="'.$site_url.'/informes-clientes">Clientes</a></li>
-                <li><a href="/lista.html">Empleados</a></li>
-                <li role="separator" class="divider"></li>
-				';
-				?>
-              </ul>
-            </li>
             <?php
             echo '
             <li'; if (strpos($url_actual, 'reports.php') !== false or strpos($url_actual, 'informes') !== false) echo ' class="active"'; echo '><a href="'.$site_url.'/informes">Informes</a></li>
