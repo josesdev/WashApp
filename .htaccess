@@ -13,6 +13,9 @@ Rewriterule ^editar-tipo-de-lavado index.php?action=editar-tipo-de-lavado
 Rewriterule ^lista-empleados index.php?action=lista-empleados
 Rewriterule ^agregar-empleado index.php?action=agregar-empleado
 Rewriterule ^editar-empleado index.php?action=editar-empleado
+Rewriterule ^operador/registrar-turno index.php?action=operador-agregar-turno
+Rewriterule ^operador/registrar-plan index.php?action=operador-agregar-plan
+Rewriterule ^operador/ver-turnos index.php?action=operador-ver-turnos
 Rewriterule ^iniciar-sesion login.php
 Rewriterule ^registro register.php
 Rewriterule ^recuperar-contrasena password_reset.php

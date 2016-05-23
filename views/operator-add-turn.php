@@ -6,8 +6,14 @@ $dia_actual_20 = date('m/d/Y', (time() + (20 * 24 * 60 * 60)));
 
 <div class="col-lg-offset-3 col-lg-6">
   <div class="well bs-component">
-    <h3 class="center">Registrar turno de lavado</h3>
+    <h3 class="center">Registrar turno de lavado para un cliente particular</h3>
     <form class="form-horizontal" method="post" action="index.php?action=registrar-turno" name="loginform">
+      <div class="form-group">
+        <label for="wash_client_name" class="col-lg-4 control-label">Nombre y Apellido del cliente</label>
+        <div class="col-lg-6">
+          <input type="text" class="form-control" id="wash_client_name" required=""></input>
+        </div>
+      </div>
       <div class="form-group">
         <label for="user_name" class="col-lg-4 control-label">Tipo de vehículo</label>
         <div class="col-lg-6">
@@ -22,13 +28,15 @@ $dia_actual_20 = date('m/d/Y', (time() + (20 * 24 * 60 * 60)));
       <div class="form-group">
         <label class="col-lg-4 control-label">Lugar de lavado</label>
         <div class="col-lg-6">
-          <div class="radio radio-primary">
-            <label>
-              <input type="radio" name="type_place" value="centro" id="type_sucursal" checked="checked"> Centro de lavado
-            </label>
-            <label>
-              <input type="radio" name="type_place" value="estacion" id="type_movil"> Estación móvil
-            </label>
+          <div class="client">
+            <div class="radio radio-primary">
+              <label>
+                <input type="radio" name="type_place" value="centro" id="type_sucursal" checked="checked"> Centro de lavado
+              </label>
+              <label>
+                <input type="radio" name="type_place" value="estacion" id="type_movil"> Estación móvil
+              </label>
+            </div>
           </div>
         </div>
       </div>
@@ -50,7 +58,7 @@ $dia_actual_20 = date('m/d/Y', (time() + (20 * 24 * 60 * 60)));
         <div class="form-group no-margin-top">
     		  <label for="wash_adreess" class="col-lg-4 control-label">Dirección</label>
           <div class="col-lg-6">
-        	   <input type="text" class="form-control" id="wash_adreess"></input>
+            <input type="text" class="form-control" id="wash_adreess"></input>
           </div>
         </div>
     	</div>
@@ -58,9 +66,9 @@ $dia_actual_20 = date('m/d/Y', (time() + (20 * 24 * 60 * 60)));
     	   <label for="user_name" class="col-lg-4 control-label">Tipo de lavado</label>
          <div class="col-lg-6">
            <select class="selectpicker" name="type_vehicle">
-      	     <option>Básico</option>
-             <option>Completo</option>
-      	     <option>Ecológico</option>
+            <option>Básico</option>
+            <option>Completo</option>
+            <option>Ecológico</option>
           </select>
         </div>
       </div>
@@ -78,22 +86,18 @@ $dia_actual_20 = date('m/d/Y', (time() + (20 * 24 * 60 * 60)));
         	  <option disabled>9:00</option>
         	  <option>10:00</option>
         	  <option>11:00</option>
-        	  <option disabled>16:00</option>
-        	  <option>17:00</option>
-        	  <option disabled>18:00</option>
-        	  <option>19:00</option>
-        	  <option>20:00</option>
-      	  </select>
-        </div>
+      	   </select>
+         </div>
       </div>
-
       <div class="center">
         <input type="submit" class="btn btn-raised btn-success" name="login" value="Registrar turno" />
       </div>
-    </div>
     </form>
   </div>
 </div>
+
+<!-- For autocomplete -->
+<script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
 
 <script type="text/javascript">
 <?php
@@ -120,6 +124,37 @@ $(document).ready(function(){
         $("#Tmovil").show();
     });
 });
+
+  $(function() {
+    var availableTags = [
+      "ActionScript",
+      "AppleScript",
+      "Asp",
+      "BASIC",
+      "C",
+      "C++",
+      "Clojure",
+      "COBOL",
+      "ColdFusion",
+      "Erlang",
+      "Fortran",
+      "Groovy",
+      "Haskell",
+      "Java",
+      "JavaScript",
+      "Lisp",
+      "Perl",
+      "PHP",
+      "Python",
+      "Ruby",
+      "Scala",
+      "Scheme"
+    ];
+    $( "#wash_client_name" ).autocomplete({
+      source: availableTags
+    });
+  });
+
 </script>
 
 <?php include('_footer.php'); ?>

@@ -1,102 +1,164 @@
 <?php include('_header.php');
-require_once(__ROOT__.'/config.php'); 
+require_once(__ROOT__.'/config.php');
+$dia_actual = date('m/d/Y', time());
+$dia_actual_20 = date('m/d/Y', (time() + (20 * 24 * 60 * 60)));
 ?>
+<div class="col-lg-offset-3 col-lg-6">
+  <div class="well bs-component">
+    <h3 class="center">Solicitar plan de lavado</h3>
 
-<h3 class="center">Solicitar plan de lavado</h3>
-
-<form method="post" action="/" name="loginform">
-<div class="form-group register">
-    <label for="user_name" class="col-lg-4 control-label">Tipo de vehículo</label>
-    <select class="selectpicker" name="type_vehicle">
-        <option>Pickup</option>
-        <option>Sedán</option>
-        <option>Camioneta 4x4</option>
-        <option>Camión</option>
-    </select>
-    <label for="wash_vehicles_cant" class="col-lg-4 control-label">Cantidad</label>
-    <input type="text" class="form-control" id="wash_vehicles_cant"></input>
-    <label for="user_name" class="col-lg-4 control-label">Tipo de lavado</label>
-    <select class="selectpicker" name="type_vehicle">
-	    <option>Básico</option>
-	    <option>Completo</option>
-	    <option>Ecológico</option>
-    </select>
-    <label for="wash_period" class="col-lg-4 control-label">Periodicidad</label>
-    <div id="period">
-        <select class="selectpicker" name="wash_day">
-            <option id="day1">1 día a la semana</option>
-            <option id="day2">2 días a la semana</option>
-            <option id="day3">3 días a la semana</option>
-        </select>
-    </div>
-
-    <div id="flota2" class="displayN" style="margin-top: 2%;">
+    <form class="form-horizontal" method="post" action="/" name="loginform">
+      <div class="form-group">
         <label for="user_name" class="col-lg-4 control-label">Tipo de vehículo</label>
-        <select class="selectpicker" name="type_vehicle">
+        <div class="col-lg-6">
+          <select class="selectpicker" name="type_vehicle">
             <option>Pickup</option>
             <option>Sedán</option>
             <option>Camioneta 4x4</option>
             <option>Camión</option>
-        </select>
+          </select>
+        </div>
+      </div>
+      <div class="form-group no-margin-top">
         <label for="wash_vehicles_cant" class="col-lg-4 control-label">Cantidad</label>
-        <input type="text" class="form-control" id="wash_vehicles_cant"></input>
+        <div class="col-lg-6">
+          <input type="text" class="form-control" id="wash_vehicles_cant"></input>
+        </div>
+      </div>
+      <div class="form-group no-margin-top">
         <label for="user_name" class="col-lg-4 control-label">Tipo de lavado</label>
-        <select class="selectpicker" name="type_vehicle">
-            <option>Básico</option>
-            <option>Completo</option>
-            <option>Ecológico</option>
-        </select>
+        <div class="col-lg-6">
+          <select class="selectpicker" name="type_vehicle">
+      	    <option>Básico</option>
+      	    <option>Completo</option>
+      	    <option>Ecológico</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-group no-margin-top">
         <label for="wash_period" class="col-lg-4 control-label">Periodicidad</label>
-        <div id="period">
+        <div class="col-lg-6">
+          <div id="period">
             <select class="selectpicker" name="wash_day">
                 <option id="day1">1 día a la semana</option>
                 <option id="day2">2 días a la semana</option>
                 <option id="day3">3 días a la semana</option>
             </select>
+          </div>
         </div>
-    </div>
+      </div>
 
-    <div id="flota3" class="displayN" style="margin-top: 2%;">
-        <label for="user_name" class="col-lg-4 control-label">Tipo de vehículo</label>
-        <select class="selectpicker" name="type_vehicle">
-            <option>Pickup</option>
-            <option>Sedán</option>
-            <option>Camioneta 4x4</option>
-            <option>Camión</option>
-        </select>
-        <label for="wash_vehicles_cant" class="col-lg-4 control-label">Cantidad</label>
-        <input type="text" class="form-control" id="wash_vehicles_cant"></input>
-        <label for="user_name" class="col-lg-4 control-label">Tipo de lavado</label>
-        <select class="selectpicker" name="type_vehicle">
-            <option>Básico</option>
-            <option>Completo</option>
-            <option>Ecológico</option>
-        </select>
-        <label for="wash_period" class="col-lg-4 control-label">Periodicidad</label>
-        <div id="period">
-            <select class="selectpicker" name="wash_day">
-                <option id="day1">1 día a la semana</option>
-                <option id="day2">2 días a la semana</option>
-                <option id="day3">3 días a la semana</option>
-            </select>
+        <div id="flota2" class="displayN" style="margin-top: 6%;">
+          <div class="form-group">
+            <label for="user_name" class="col-lg-4 control-label">Tipo de vehículo</label>
+            <div class="col-lg-6">
+              <select class="selectpicker" name="type_vehicle">
+                <option>Pickup</option>
+                <option>Sedán</option>
+                <option>Camioneta 4x4</option>
+                <option>Camión</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group no-margin-top">
+            <label for="wash_vehicles_cant" class="col-lg-4 control-label">Cantidad</label>
+            <div class="col-lg-6">
+              <input type="text" class="form-control" id="wash_vehicles_cant"></input>
+            </div>
+          </div>
+          <div class="form-group no-margin-top">
+            <label for="user_name" class="col-lg-4 control-label">Tipo de lavado</label>
+            <div class="col-lg-6">
+              <select class="selectpicker" name="type_vehicle">
+                <option>Básico</option>
+                <option>Completo</option>
+                <option>Ecológico</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group no-margin-top">
+            <label for="wash_period" class="col-lg-4 control-label">Periodicidad</label>
+            <div class="col-lg-6">
+              <div id="period">
+                <select class="selectpicker" name="wash_day">
+                    <option id="day1">1 día a la semana</option>
+                    <option id="day2">2 días a la semana</option>
+                    <option id="day3">3 días a la semana</option>
+                </select>
+              </div>
+            </div>
+          </div>
         </div>
-    </div>
 
-    <div class="center"><a href="#" id="add_flota" class="bold" onclick="agregar_flota();">+ Agregar otra flota de vehículos</a></div>
+        <div id="flota3" class="displayN" style="margin-top: 6%;">
+          <div class="form-group">
+            <label for="user_name" class="col-lg-4 control-label">Tipo de vehículo</label>
+            <div class="col-lg-6">
+              <select class="selectpicker" name="type_vehicle">
+                <option>Pickup</option>
+                <option>Sedán</option>
+                <option>Camioneta 4x4</option>
+                <option>Camión</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group no-margin-top">
+            <label for="wash_vehicles_cant" class="col-lg-4 control-label">Cantidad</label>
+            <div class="col-lg-6">
+              <input type="text" class="form-control" id="wash_vehicles_cant"></input>
+            </div>
+          </div>
+          <div class="form-group no-margin-top">
+            <label for="user_name" class="col-lg-4 control-label">Tipo de lavado</label>
+            <div class="col-lg-6">
+              <select class="selectpicker" name="type_vehicle">
+                <option>Básico</option>
+                <option>Completo</option>
+                <option>Ecológico</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group no-margin-top">
+            <label for="wash_period" class="col-lg-4 control-label">Periodicidad</label>
+            <div class="col-lg-6">
+              <div id="period">
+                <select class="selectpicker" name="wash_day">
+                    <option id="day1">1 día a la semana</option>
+                    <option id="day2">2 días a la semana</option>
+                    <option id="day3">3 días a la semana</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
 
-    <ul class="list-group">
-      <li class="list-group-item list-group-item-warning l">Recuerde que su plan de lavado será evaluado y un operador se comunicará con Usted dentro de las 48 hs.</li>
-    </ul>
+        <div class="center form-group"><a href="javascript:void(0)" id="add_flota" class="bold" onclick="agregar_flota();">+ Agregar otra flota de vehículos</a></div>
 
-    <input type="submit" class="btn btn-success submitL" name="login" value="Registrar plan" />
+      <div class="alert plan alert-dismissible alert-info center" style="margin:10px 0;">
+        <strong>Recuerde que su plan de lavado será evaluado y un operador se comunicará con Usted dentro de las 48 hs.</strong>
+      </div>
+      <div class="center">
+        <input type="submit" class="btn btn-raised btn-success" name="login" value="Registrar plan" />
+      </div>
+    </form>
+  </div>
 </div>
-</form>
 
 <script type="text/javascript">
+// Select dia de turno de lavado
+<?php
+echo'
 $(function() {
-    $("#wash_day").datepicker();
-    $(".selectpicker").selectpicker();
+    $("#wash_day").datetimepicker({
+                    locale: "es",
+                    daysOfWeekDisabled: [0],
+                    format: "DD/MM/YYYY",
+                    minDate: "'.$dia_actual.'",
+                    maxDate: "'.$dia_actual_20.'"
+                });
   });
+';
+?>
 function agregar_flota() {
     $("#flota2").show();
     $("#add_flota").attr("onclick","agregar_flota_2()")
