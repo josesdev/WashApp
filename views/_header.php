@@ -189,6 +189,15 @@ $url_actual = $_SERVER['REQUEST_URI'];
                 <li'; if (strpos($url_actual, 'editar-empleado') !== false) echo ' class="active"'; echo '><a href="'.$site_url.'/editar-empleado">Editar</a></li>
               </ul>
             </li>
+
+            <li class="dropdown">
+              <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Servicios <span class="caret"></span></a>
+              <ul class="dropdown-menu active">
+                <li'; if (strpos($url_actual, 'servicios/registrar-servicio') !== false) echo ' class="active"'; echo '><a href="'.$site_url.'/servicios/registrar-servicio">Registrar servicios</a></li>
+                <li'; if (strpos($url_actual, 'servicios/editar-servicio') !== false) echo ' class="active"'; echo '><a href="'.$site_url.'/servicios/editar-servicio">Editar servicios</a></li>
+              </ul>
+            </li>
+
             <li class="dropdown">
               <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Operador <span class="caret"></span></a>
               <ul class="dropdown-menu active">
@@ -197,6 +206,7 @@ $url_actual = $_SERVER['REQUEST_URI'];
                 <li'; if (strpos($url_actual, 'operador/ver-turnos') !== false) echo ' class="active"'; echo '><a href="'.$site_url.'/operador/ver-turnos">Ver turnos de lavado</a></li>
               </ul>
             </li>';
+            
             ?>
           </ul>
         </div><!--/.nav-collapse -->
