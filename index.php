@@ -89,6 +89,12 @@ if(isset($_GET['action'])) {
     if ($_GET['action'] == 'operador-ver-turnos') {
         include("views/operator-turns-view.php");
     }
+    if ($_GET['action'] == 'registrar-servicio') {
+        include("views/registrar-servicio.php");
+    }
+    if ($_GET['action'] == 'editar-servicio') {
+        include("views/editar-servicio.php");
+    }
 }
 // Si no hay accion mostramos el archivo para clientes logueados y no logueados
 else {
