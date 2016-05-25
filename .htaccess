@@ -21,3 +21,5 @@ Rewriterule ^servicios/editar-servicio index.php?action=editar-servicio
 Rewriterule ^iniciar-sesion login.php
 Rewriterule ^registro register.php
 Rewriterule ^recuperar-contrasena password_reset.php
+Rewriterule ^informes index.php?action=informes
+Rewriterule ^informes-clientes index.php?action=informes-clientes
