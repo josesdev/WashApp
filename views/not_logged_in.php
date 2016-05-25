@@ -8,6 +8,7 @@ require_once(__ROOT__.'/config.php');
     var obj = document.getElementById(unvalor);
     if (obj.style.display == "none") obj.style.display="block";
       else obj.style.display = "none";
+    $.scrollTo('#'+unvalor, 800);
   }
 </script>
 
