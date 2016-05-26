@@ -88,7 +88,6 @@ $dia_actual_20 = date('m/d/Y', (time() + (20 * 24 * 60 * 60)));
       </div>
 
       <div class="center">
-        <input type="submit" class="btn btn-raised btn-success" name="login" value="Registrar turno" />
       </div>
     </div>
     </form>
