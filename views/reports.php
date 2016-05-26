@@ -1,5 +1,7 @@
 <?php include('_header.php');
 require_once(__ROOT__.'/config.php');
+$dia_actual = date('m/d/Y', time());
+$dia_actual_20 = date('m/d/Y', (time() + (20 * 24 * 60 * 60)));
 ?>
 
 
@@ -17,11 +19,11 @@ require_once(__ROOT__.'/config.php');
 			<br>
             <label for="user_name" class="col-lg-4 control-label">Seleccione centro</label>
 			<select class="selectpicker" name="type_center" id="type_center">
-				<option>Todas las centros</option>
-				<option>Washapp Centro</option>
-				<option>Washapp Centenario</option>
-				<option>Washapp 2</option>
-				<option>Washapp Corrientes</option>
+				<option value="1">Todas las centros</option>
+				<option value="2">Washapp Centro</option>
+				<option value="3">Washapp Centenario</option>
+				<option value="4">Washapp 2</option>
+				<option value="5">Washapp Corrientes</option>
 			</select>
 			<br>
 			<input type="submit" class="btn btn-success submit" name="register" value="Crear informe de centros" id="btncentros"/>
@@ -98,11 +100,11 @@ require_once(__ROOT__.'/config.php');
 	<br>
 	<label for="user_name" class="col-lg-4 control-label">Desde</label>
 	<br>
-	<input type="text" size="4" class="form-control" id="wash_day1"></input>
+	<input type="text" size="4" class="form-control" id="minfecha"></input>
 	<br>
 	<label for="user_name" class="col-lg-4 control-label">Hasta</label>
 	<br>
-	<input type="text" class="form-control" id="wash_day2"></input>
+	<input type="text" class="form-control" id="maxfecha"></input>
 	<br>
 	<div class="w3-container" id="informeclientes"  style='display:none;'>
 			<h3 class="center">Lista de clientes particulares</h3>
@@ -562,6 +564,30 @@ require_once(__ROOT__.'/config.php');
             </tbody>
           </table>
 	</div>
+	<div class="w3-container" id="informecentenario"  style='display:none;'>
+			<h3 class="center">Centros</h3>
+			<br>
+          <table class="table">
+            <thead>
+            <?php
+            echo'
+              <tr>
+                <th>Centro</th>
+                <th>Total de lavados realizados</th>
+                <th>Importe recaudado</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr id="clp1">
+                <td>Washapp Centenario</td>
+                <td>120</td>
+                <td>$12000</td>
+              </tr>
+              ';
+              ?>
+            </tbody>
+          </table>
+	</div>
 	<div class="w3-container" id="informeempleados"  style='display:none;'>
 			<h3 class="center">Empleados</h3>
 			<br>
@@ -607,21 +633,31 @@ require_once(__ROOT__.'/config.php');
           </table>
 	</div>
 	<div class="w3-container" id="Imprimir" style='display:none;'>
-	<br>
-			<input type="submit" class="btn btn-success submit" name="print" value="Imprimir informe" id="btnimprimir"/>
-	</div>
+	<button id="btnimprimir" type="button" class="btn btn-default" data-style="toast" data-content="Su informe se imprimirá en unos segundos" data-toggle="snackbar" data-timeout="0">Imprimir informe</button>
 	
-<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js">
-	$(function() {
-	$("#wash_day1").datepicker();
-	});
-
-	$(function() {
-	$("#wash_day2").datepicker();
-	});
+<script type="text/javascript">
+<?php
+echo'
+$(function() {
+    $("#minfecha").datetimepicker({
+                    locale: "es",
+                    daysOfWeekDisabled: [0],
+                    format: "DD/MM/YYYY"
+                });
+  });
+';
+echo'
+$(function() {
+    $("#maxfecha").datetimepicker({
+                    locale: "es",
+                    daysOfWeekDisabled: [0],
+                    format: "DD/MM/YYYY"
+                });
+  });
+';
+?>
 </script>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.3/jquery.min.js"></script>
 <script>	
 $(document).ready(function(){
 $("#btnclientes").click(function(){
@@ -649,11 +685,19 @@ $("#btnestaciones").click(function(){
 	$("#Imprimir").show();
 });
 $("#btncentros").click(function(){
+	var a = $("li.selected").attr("data-original-index");
 	$("#informeclientes").hide();
 	$("#informeestaciones").hide();
 	$("#informequioscos").hide();
 	$("#informeempleados").hide();
-	$("#informecentros").show();
+	if (a==2){
+		$("#informecentros").hide();
+		$("#informecentenario").show();
+	}
+	else{
+		$("#informecentros").show();
+		$("#informecentenario").hide();
+	}
 	$("#Imprimir").show();
 });
 $("#btnempleados").click(function(){

@@ -156,6 +156,7 @@ $url_actual = $_SERVER['REQUEST_URI'];
               <ul class="dropdown-menu active">
                 <li'; if (strpos($url_actual, 'registrar-turno') !== false) echo ' class="active"'; echo '><a href="'.$site_url.'/clientes/registrar-turno">Registrar turno</a></li>
                 <li'; if (strpos($url_actual, 'mis-turnos') !== false) echo ' class="active"'; echo '><a href="'.$site_url.'/clientes/mis-turnos">Mis turnos</a></li>
+                <li'; if (strpos($url_actual, 'confeccionar-hoja-de-ruta') !== false) echo ' class="active"'; echo '><a href="'.$site_url.'/confeccionar-hoja-de-ruta">Confeccionar hoja de ruta</a></li>
               </ul>
             </li>
             <li class="dropdown">

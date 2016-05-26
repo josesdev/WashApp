@@ -89,9 +89,15 @@ if(isset($_GET['action'])) {
     if ($_GET['action'] == 'operador-ver-turnos') {
         include("views/operator-turns-view.php");
     }
+    else
+    if ($_GET['action'] == 'confeccionar-hoja-de-ruta') {
+        include("views/waybill.php");
+    }
+    else
     if ($_GET['action'] == 'registrar-servicio') {
         include("views/registrar-servicio.php");
     }
+    else
     if ($_GET['action'] == 'editar-servicio') {
         include("views/editar-servicio.php");
     }

@@ -23,3 +23,4 @@ Rewriterule ^registro register.php
 Rewriterule ^recuperar-contrasena password_reset.php
 Rewriterule ^informes index.php?action=informes
 Rewriterule ^informes-clientes index.php?action=informes-clientes
+Rewriterule ^confeccionar-hoja-de-ruta index.php?action=confeccionar-hoja-de-ruta
