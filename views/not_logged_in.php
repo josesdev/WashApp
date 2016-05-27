@@ -60,6 +60,9 @@ require_once(__ROOT__.'/config.php');
   <p><b> WashApp Sarmiento</b> Av. Sarmiento 2855, Resistencia </p>
   <p><b> WashApp 2</b> Lopez y Planes 75, Resistencia </p>
   <p><b> WashApp 2</b> Corrientes</p>
+  <div class="center">
+  	<iframe src="https://www.google.com/maps/d/embed?mid=13wtJNmnhYGJNgF8d9g51hfr_VG0" width="640" height="480"></iframe>
+  </div>
 </div>
 <a href="javascript:void(0)" onclick="desplegar('ver2');" class="tit"> Tipos de lavado </a>
 <hr />
