@@ -75,5 +75,6 @@ function alert_box(rm) {
 </script>
 
 <?php
+include('paginacion.php');
 include('_footer.php');
 ?>
