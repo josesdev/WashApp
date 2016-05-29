@@ -101,6 +101,22 @@ if(isset($_GET['action'])) {
     if ($_GET['action'] == 'editar-servicio') {
         include("views/editar-servicio.php");
     }
+    else
+    if ($_GET['action'] == 'lista-insumos') {
+        include("views/insumos.php");
+    }
+    else
+    if ($_GET['action'] == 'agregar-insumo') {
+        include("views/insumos_add.php");
+    }
+    else
+    if ($_GET['action'] == 'editar-insumo') {
+        include("views/insumos_edit.php");
+    }
+    else
+    if ($_GET['action'] == 'insumos-cantidad') {
+        include("views/insumos_cantidad.php");
+    }
 }
 // Si no hay accion mostramos el archivo para clientes logueados y no logueados
 else {

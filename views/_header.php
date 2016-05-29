@@ -148,9 +148,16 @@ $url_actual = $_SERVER['REQUEST_URI'];
             <?php
             echo '
             <li'; if (strpos($url_actual, 'reports.php') !== false or strpos($url_actual, 'informes') !== false) echo ' class="active"'; echo '><a href="'.$site_url.'/informes">Informes</a></li>
-            <li'; if (strpos($url_actual, 'register.php') !== false or strpos($url_actual, 'registro') !== false) echo ' class="active"'; echo '><a href="'.$site_url.'/registro">Registrarse</a></li>
-            <li'; if (strpos($url_actual, 'login.php') !== false or strpos($url_actual, 'iniciar-sesion') !== false) echo ' class="active"'; echo '><a href="'.$site_url.'/iniciar-sesion">Iniciar sesión</a></li>';
-            echo '
+            <li class="dropdown">
+              <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Registro<span class="caret"></span></a>
+              <ul class="dropdown-menu active">
+                <li'; if (strpos($url_actual, 'register.php') !== false or strpos($url_actual, 'registro') !== false) echo ' class="active"'; echo '><a href="'.$site_url.'/registro">Registrarse</a></li>                
+                <li'; if (strpos($url_actual, 'login.php') !== false or strpos($url_actual, 'iniciar-sesion') !== false) echo ' class="active"'; echo '><a href="'.$site_url.'/iniciar-sesion">Iniciar sesión</a></li>';
+                echo '
+              </ul>
+            </li>           
+            
+            
             <li class="dropdown">
               <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Turnos <span class="caret"></span></a>
               <ul class="dropdown-menu active">
@@ -199,7 +206,17 @@ $url_actual = $_SERVER['REQUEST_URI'];
                 <li'; if (strpos($url_actual, 'operador/registrar-plan') !== false) echo ' class="active"'; echo '><a href="'.$site_url.'/operador/registrar-plan">Registrar solicitud de plan</a></li>
                 <li'; if (strpos($url_actual, 'operador/ver-turnos') !== false) echo ' class="active"'; echo '><a href="'.$site_url.'/operador/ver-turnos">Ver turnos de lavado</a></li>
               </ul>
-            </li>';
+            </li>
+            
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> Insumos <span class="caret"></span></a>
+              <ul class="dropdown-menu active">
+                <li'; if (strpos($url_actual, 'lista-insumos') !== false) echo ' class="active"'; echo '><a href="'.$site_url.'/lista-insumos">Lista de insumos</a></li>
+                <li'; if (strpos($url_actual, 'agregar-insumo') !== false) echo ' class="active"'; echo '><a href="'.$site_url.'/agregar-insumo">Agregar insumo</a></li>
+                <li'; if (strpos($url_actual, 'editar-insumo') !== false) echo ' class="active"'; echo '><a href="'.$site_url.'/editar-insumo">Editar insumo</a></li>
+                <li'; if (strpos($url_actual, 'insumos-cantidad') !== false) echo ' class="active"'; echo '><a href="'.$site_url.'/insumos-cantidad">Cantidad de insumos</a></li>
+              </ul>
+            </li> ';
             
             ?>
           </ul>

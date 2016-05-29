@@ -155,7 +155,7 @@ body {
 	margin-top: 0px;
 }
 
-hr { 
+.hrli { 
  height: 30px;
  border-style: solid;
  border-color: #BFBFBF;
@@ -168,6 +168,7 @@ hr {
  margin-bottom: -10px;
 
 }
+
 
 .forma { margin-top: -12px;
 	     margin-bottom: -5px;
@@ -184,4 +185,46 @@ hr {
     background-color: #009688;
     border-color: #009688;
 
+}
+
+.sub { 
+	   font-size: 17px ;
+       font-style: italic;
+       font-weight: 550;       
+       color:  #00802b;
+       
+       
+}       
+
+.der { margin-left: 120px ;
+	   }
+
+.formm { margin-top: 7px;
+	     vertical-align: middle ;
+	     
+
+}
+
+.tabl { width:450px;
+	    text-align: center;
+
+}
+
+.izq {  text-align: left;
+	    padding-top: 7px;
+	    padding-bottom: 11px;
+
+}
+
+#ray { height:0.8px;  
+       background-color: #e0e0d1;
+       border:none; 
+ }
+
+#cen {  left: 50%;
+
+}
+
+.i{ font-style: italic;
+   color:  #1a1a1a;
 }

@@ -24,3 +24,7 @@ Rewriterule ^recuperar-contrasena password_reset.php
 Rewriterule ^informes index.php?action=informes
 Rewriterule ^informes-clientes index.php?action=informes-clientes
 Rewriterule ^confeccionar-hoja-de-ruta index.php?action=confeccionar-hoja-de-ruta
+Rewriterule ^lista-insumos index.php?action=lista-insumos
+Rewriterule ^agregar-insumo index.php?action=agregar-insumo
+Rewriterule ^editar-insumo index.php?action=editar-insumo
+Rewriterule ^insumos-cantidad index.php?action=insumos-cantidad
