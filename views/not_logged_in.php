@@ -98,32 +98,5 @@ require_once(__ROOT__.'/config.php');
       </div>
     </div>
   </div>
-<a href="javascript:void(0)" onclick="desplegar('ver0');" class="tit"> Sobre nosotros </a>
-<hr class="hrli" />
-<p id="ver0" class="forma"> Somos una empresa dedicada al lavado de coches, nuestro objetivo es ofrecerte el mejor servicio. Para ello permitimos elegir el horario y dia que mejor se adapte a usted y el tipo de lavado adecuado para que tu auto reluzca!</p>
-<a href="javascript:void(0)" onclick="desplegar('ver1');" class="tit"> Sucursales </a>
-<hr class="hrli" />
-<div id="ver1" style="display: none;" class="forma">
-  <p><b> WashApp Centro</b> French 414, Resistencia </p>
-  <p><b> WashApp Sarmiento</b> Av. Sarmiento 2855, Resistencia </p>  
-  <p><b> WashApp 2</b> Corrientes</p>
-  <div class="center">
-  	<iframe src="https://www.google.com/maps/d/embed?mid=13wtJNmnhYGJNgF8d9g51hfr_VG0" width="640" height="480"></iframe>
-  </div>
-</div>
-<a href="javascript:void(0)" onclick="desplegar('ver2');" class="tit"> Tipos de lavado </a>
-<hr class="hrli" />
-<div id="ver2" style="display: none;" class="forma">
-  <p> Básico </p>
-  <p> Completo </p>
-  <p> Ecológico </p>
-</div>
-<a href="javascript:void(0)" onclick="desplegar('ver3');" class="tit"> Formas de pago </a>
-<hr class="hrli" />
-<div id="ver3" style="display: none;" class="forma">
-  <p> Contado </p>
-  <p> Tarjeta insertenombre </p>
-  <p> Otra tarjeta </p>
-</div>
 
 <?php include('_footer.php'); ?>
