@@ -19,7 +19,7 @@ define("DB_USER", "b485c99990be12");
 define("DB_PASS", "687bbed8");
 
 // URL del sitio donde se instala
-$site_url = "http://washapp.azurewebsites.net";
+$site_url = "http://washapp.azurewebsites.net"; /* NO MANDAR ESTE ARCHIVO A GITHUB */
 //$site_url = "http://localhost/washapp";
 
 /**

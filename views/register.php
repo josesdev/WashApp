@@ -114,7 +114,7 @@
     </div>
 
     <div class="form-group center">
-      <input type="submit" class="btn btn-raised btn-success" name="register" value="Registrarme" />
+      <button type="button" class="btn btn-raised btn-success">Registrarme</button>
     </div>
 
 <script type="text/javascript">
