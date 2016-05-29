@@ -48,4 +48,7 @@ require_once(__ROOT__.'/config.php');
   </div>
 </div>
 
-<?php include('_footer.php'); ?>
+<?php 
+include('paginacion.php');
+include('_footer.php'); 
+?>

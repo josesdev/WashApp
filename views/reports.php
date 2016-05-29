@@ -4,6 +4,7 @@ $dia_actual = date('m/d/Y', time());
 $dia_actual_20 = date('m/d/Y', (time() + (20 * 24 * 60 * 60)));
 ?>
 
+<div class="well bs-component">
 
 <ul class="nav nav-tabs" id="Cosas">
 	<li class="active"><a data-toggle="tab" href="#Centros">Centros</a></li>
@@ -16,17 +17,18 @@ $dia_actual_20 = date('m/d/Y', (time() + (20 * 24 * 60 * 60)));
     <div class="tab-content">
         <div id="Centros" class="tab-pane fade in active">
             <h3>Solicitar informe de centros</h3>
-			<br>
             <label for="user_name" class="col-lg-4 control-label">Seleccione centro</label>
 			<select class="selectpicker" name="type_center" id="type_center">
-				<option value="1">Todas las centros</option>
+				<option value="1">Todos los centros</option>
 				<option value="2">Washapp Centro</option>
 				<option value="3">Washapp Centenario</option>
 				<option value="4">Washapp 2</option>
 				<option value="5">Washapp Corrientes</option>
 			</select>
 			<br>
-			<input type="submit" class="btn btn-success submit" name="register" value="Crear informe de centros" id="btncentros"/>
+			<div class="center">
+			<input type="submit" class="btn btn-raised btn-success" name="register" value="Crear informe de centros" id="btncentros"/>
+			</div>
 		</div>
 		
 		
@@ -63,7 +65,9 @@ $dia_actual_20 = date('m/d/Y', (time() + (20 * 24 * 60 * 60)));
 				<option>Quiosco 25</option>
 			</select>
 			<br>
-			<input type="submit" class="btn btn-success submit" name="register" value="Crear informe de quioscos" id="btnquioscos"/>
+			<div class="center">
+			<input type="submit" class="btn btn-raised btn-success" name="register" value="Crear informe de quioscos" id="btnquioscos"/>
+			</div>
         </div>
         <div id="Estaciones" class="tab-pane fade">
             <h3>Solicitar informe de estaciones</h3>
@@ -76,10 +80,37 @@ $dia_actual_20 = date('m/d/Y', (time() + (20 * 24 * 60 * 60)));
 				<option>Estación 2</option>
 				<option>Estación 3</option>
 				<option>Estación 4</option>
-				
+				<option>Estación 5</option>
+				<option>Estación 6</option>
+				<option>Estación 7</option>
+				<option>Estación 8</option>
+				<option>Estación 9</option>
+				<option>Estación 10</option>
+				<option>Estación 11</option>
+				<option>Estación 12</option>
+				<option>Estación 13</option>
+				<option>Estación 14</option>
+				<option>Estación 15</option>
+				<option>Estación 16</option>
+				<option>Estación 17</option>
+				<option>Estación 18</option>
+				<option>Estación 19</option>
+				<option>Estación 20</option>
+				<option>Estación 21</option>
+				<option>Estación 22</option>
+				<option>Estación 23</option>
+				<option>Estación 24</option>
+				<option>Estación 25</option>
+				<option>Estación 26</option>
+				<option>Estación 27</option>
+				<option>Estación 28</option>
+				<option>Estación 29</option>
+				<option>Estación 30</option>
 			</select>
 			<br>
-			<input type="submit" class="btn btn-success submit" name="register" value="Crear informe de estaciones" id="btnestaciones"/>
+			<div class="center">
+			<input type="submit" class="btn btn-raised btn-success" name="register" value="Crear informe de estaciones" id="btnestaciones"/>
+			</div>
         </div>
         <div id="Empleados" class="tab-pane fade">
             <h3>Solicitar informe de empleados</h3>
@@ -88,12 +119,16 @@ $dia_actual_20 = date('m/d/Y', (time() + (20 * 24 * 60 * 60)));
 			Acá poner caja de búsqueda inteligente (?)
 			
 			<br>
-			<input type="submit" class="btn btn-success submit" name="register" value="Crear informe de empleados" id="btnempleados"/>
+			<div class="center">
+			<input type="submit" class="btn btn-raised btn-success" name="register" value="Crear informe de empleados" id="btnempleados"/>
+			</div>
         </div>
         <div id="Clientes" class="tab-pane fade">
 			<div class="col-md-12">
 			<br>
-			<input type="submit" class="btn btn-success submit" name="register" value="Crear informe de clientes" id="btnclientes"/>
+			<div class="center">
+			<input type="submit" class="btn btn-raised btn-success" name="register" value="Crear informe de clientes" id="btnclientes"/>
+			</div>
         </div>
 		</div>
 	</div>
@@ -633,8 +668,11 @@ $dia_actual_20 = date('m/d/Y', (time() + (20 * 24 * 60 * 60)));
           </table>
 	</div>
 	<div class="w3-container" id="Imprimir" style='display:none;'>
-	<button id="btnimprimir" type="button" class="btn btn-default" data-style="toast" data-content="Su informe se imprimirá en unos segundos" data-toggle="snackbar" data-timeout="0">Imprimir informe</button>
-	
+		<div class="center">
+			<button id="btnimprimir" type="button" class="btn btn-raised btn-success" data-style="toast" data-content="Su informe se imprimirá en unos segundos" data-toggle="snackbar" data-timeout="0">Imprimir informe</button>
+		</div>
+	</div>
+</div>	
 <script type="text/javascript">
 <?php
 echo'
