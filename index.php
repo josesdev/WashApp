@@ -117,6 +117,14 @@ if(isset($_GET['action'])) {
     if ($_GET['action'] == 'insumos-cantidad') {
         include("views/insumos_cantidad.php");
     }
+    else
+    if ($_GET['action'] == 'playa-ver-turnos') {
+        include("views/playa-turns-view.php");
+    }
+    else
+    if ($_GET['action'] == 'playa-actualizar-turnos') {
+        include("views/playa-turns-act.php");
+    }
 }
 // Si no hay accion mostramos el archivo para clientes logueados y no logueados
 else {

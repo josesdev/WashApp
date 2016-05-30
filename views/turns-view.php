@@ -27,8 +27,8 @@ $hora_3 = date('H', time()) - 2;
                 <td>'.$dia_actual.' '.$hora_3.':00 hs</td>';
                 ?>
                 <td>Camioneta 4x4</td>
-                <td>WashApp Centenario</td>
-                <td>Av. Sarmiento 2855, Resistencia</td>
+                <td>WashApp Centro</td>
+                <td>French 414, Resistencia</td>
                 <td>Completo</td>
                 <td>
                     <a href="javascript:void(0)" class="alert-box"><span class="glyphicon glyphicon-remove"></span> Cancelar turno</a>
@@ -38,7 +38,7 @@ $hora_3 = date('H', time()) - 2;
                 <td>20/06/2016 09:00 hs</td>
                 <td>Sedán</td>
                 <td>Estación móvil</td>
-                <td>French 800, Resistencia</td>
+                <td>San Lorenzo 1066, Resistencia</td>
                 <td>Básico</td>
                 <td>
                     <a href="javascript:void(0)" class="alert-box2"><span class="glyphicon glyphicon-remove"></span> Cancelar turno</a>

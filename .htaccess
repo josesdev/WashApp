@@ -28,3 +28,5 @@ Rewriterule ^lista-insumos index.php?action=lista-insumos
 Rewriterule ^agregar-insumo index.php?action=agregar-insumo
 Rewriterule ^editar-insumo index.php?action=editar-insumo
 Rewriterule ^insumos-cantidad index.php?action=insumos-cantidad
+Rewriterule ^encargado-playa/ver-turnos index.php?action=playa-ver-turnos
+Rewriterule ^encargado-playa/actualizar-turnos index.php?action=playa-actualizar-turnos
