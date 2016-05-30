@@ -17,7 +17,7 @@ Rewriterule ^operador/registrar-turno index.php?action=operador-agregar-turno
 Rewriterule ^operador/registrar-plan index.php?action=operador-agregar-plan
 Rewriterule ^operador/ver-turnos index.php?action=operador-ver-turnos
 Rewriterule ^servicios/registrar-servicio index.php?action=registrar-servicio
-Rewriterule ^servicios/editar-servicio index.php?action=editar-servicio
+Rewriterule ^servicios/lista-servicio index.php?action=lista-servicio
 Rewriterule ^iniciar-sesion login.php
 Rewriterule ^registro register.php
 Rewriterule ^recuperar-contrasena password_reset.php

@@ -98,8 +98,8 @@ if(isset($_GET['action'])) {
         include("views/registrar-servicio.php");
     }
     else
-    if ($_GET['action'] == 'editar-servicio') {
-        include("views/editar-servicio.php");
+    if ($_GET['action'] == 'lista-servicio') {
+        include("views/lista-servicio.php");
     }
     else
     if ($_GET['action'] == 'lista-insumos') {
