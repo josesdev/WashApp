@@ -21,6 +21,7 @@ define("DB_PASS", "687bbed8");
 // URL del sitio donde se instala
 $site_url = "http://washapp.azurewebsites.net"; /* NO MANDAR ESTE ARCHIVO A GITHUB */
 //$site_url = "http://localhost/washapp";
+$menu_tpi = 1; /* Si esta en 1 muestra el menu unicamente para cliente, encargado de servicios externos y encargado de playa. Sino muestra el menu completo */
 
 /**
  * Configuration for: Cookies
