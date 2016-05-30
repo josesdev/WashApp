@@ -134,5 +134,6 @@ function change_ok() {
 </script>
 
 <?php
+include('paginacion.php');
 include('_footer.php');
 ?>

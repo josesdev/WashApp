@@ -171,5 +171,6 @@ $(document).ready(function(){
 });
 </script>
 <?php
+include('paginacion.php');
 include('_footer.php');
 ?>

@@ -69,6 +69,6 @@ $(document).on("click", ".alert-box2", function(e) {
 </script>
 
 <?php
-include('_footer.php');
 include('paginacion.php');
+include('_footer.php');
 ?>
