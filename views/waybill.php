@@ -11,7 +11,7 @@ require_once(__ROOT__.'/config.php');
     <div id="Crear" class="tab-pane fade in active">
 		<div class="well bs-component">
 		<form method="post" class="form-horizontal">
-		<h3 class="center">Confección de hoja de ruta</h3>
+		<h3 class="center" >Confección de hoja de ruta</h3>
 				<div class="form-group">
 					<label class="col-lg-4 control-label">Seleccione estación móvil</label>
 					<div class="col-lg-6">

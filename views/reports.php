@@ -4,7 +4,6 @@ $dia_actual = date('m/d/Y', time());
 $dia_actual_20 = date('m/d/Y', (time() + (20 * 24 * 60 * 60)));
 ?>
 
-<div class="well bs-component">
 
 <ul class="nav nav-tabs" id="Cosas">
 	<li class="active"><a data-toggle="tab" href="#Centros">Centros</a></li>
@@ -16,8 +15,10 @@ $dia_actual_20 = date('m/d/Y', (time() + (20 * 24 * 60 * 60)));
 
     <div class="tab-content">
         <div id="Centros" class="tab-pane fade in active">
+		<div class="well bs-component">
             <h3>Solicitar informe de centros</h3>
             <label for="user_name" class="col-lg-4 control-label">Seleccione centro</label>
+			<div class="col-lg-6">
 			<select class="selectpicker" name="type_center" id="type_center">
 				<option value="1">Todos los centros</option>
 				<option value="2">Washapp Centro</option>
@@ -25,14 +26,26 @@ $dia_actual_20 = date('m/d/Y', (time() + (20 * 24 * 60 * 60)));
 				<option value="4">Washapp 2</option>
 				<option value="5">Washapp Corrientes</option>
 			</select>
-			<br>
+			</div>
+			
+			<label for="user_name" class="col-lg-4 control-label">Desde</label>
+			<div class="col-lg-6">
+			<input type="text" size="4" class="form-control"></input>
+			</div>
+			<label for="user_name" class="col-lg-4 control-label">Hasta</label>
+			<div class="col-lg-6">
+			<input type="text" class="form-control"></input>
+			</div>
+	
 			<div class="center">
 			<input type="submit" class="btn btn-raised btn-success" name="register" value="Crear informe de centros" id="btncentros"/>
 			</div>
 		</div>
+	</div>	
 		
 		
         <div id="Quioscos" class="tab-pane fade">
+		<div class="well bs-component">
 			<h3>Solicitar informe de quioscos</h3>
 			<br>
             <label for="user_name" class="col-lg-4 control-label">Seleccione quiosco/s</label>
@@ -69,7 +82,10 @@ $dia_actual_20 = date('m/d/Y', (time() + (20 * 24 * 60 * 60)));
 			<input type="submit" class="btn btn-raised btn-success" name="register" value="Crear informe de quioscos" id="btnquioscos"/>
 			</div>
         </div>
+		</div>
+		
         <div id="Estaciones" class="tab-pane fade">
+		<div class="well bs-component">
             <h3>Solicitar informe de estaciones</h3>
 			<br>
 			<label for="user_name" class="col-lg-4 control-label">Seleccione estación/es</label>
@@ -112,7 +128,9 @@ $dia_actual_20 = date('m/d/Y', (time() + (20 * 24 * 60 * 60)));
 			<input type="submit" class="btn btn-raised btn-success" name="register" value="Crear informe de estaciones" id="btnestaciones"/>
 			</div>
         </div>
+		</div>
         <div id="Empleados" class="tab-pane fade">
+		<div class="well bs-component">
             <h3>Solicitar informe de empleados</h3>
 			<br>
 			
@@ -122,8 +140,10 @@ $dia_actual_20 = date('m/d/Y', (time() + (20 * 24 * 60 * 60)));
 			<div class="center">
 			<input type="submit" class="btn btn-raised btn-success" name="register" value="Crear informe de empleados" id="btnempleados"/>
 			</div>
+		</div>
         </div>
         <div id="Clientes" class="tab-pane fade">
+		<div class="well bs-component">
 			<div class="col-md-12">
 			<br>
 			<div class="center">
@@ -132,15 +152,11 @@ $dia_actual_20 = date('m/d/Y', (time() + (20 * 24 * 60 * 60)));
         </div>
 		</div>
 	</div>
-	<br>
-	<label for="user_name" class="col-lg-4 control-label">Desde</label>
-	<br>
-	<input type="text" size="4" class="form-control" id="minfecha"></input>
-	<br>
-	<label for="user_name" class="col-lg-4 control-label">Hasta</label>
-	<br>
-	<input type="text" class="form-control" id="maxfecha"></input>
-	<br>
+	</div>
+	
+	<div class="well bs-component" id="Hoja"  style='display:none;'>
+
+	
 	<div class="w3-container" id="informeclientes"  style='display:none;'>
 			<h3 class="center">Lista de clientes particulares</h3>
 			<br>
@@ -672,12 +688,12 @@ $dia_actual_20 = date('m/d/Y', (time() + (20 * 24 * 60 * 60)));
 			<button id="btnimprimir" type="button" class="btn btn-raised btn-success" data-style="toast" data-content="Su informe se imprimirá en unos segundos" data-toggle="snackbar" data-timeout="0">Imprimir informe</button>
 		</div>
 	</div>
-</div>	
+	</div>
 <script type="text/javascript">
 <?php
 echo'
 $(function() {
-    $("#minfecha").datetimepicker({
+    $(".form-control").datetimepicker({
                     locale: "es",
                     daysOfWeekDisabled: [0],
                     format: "DD/MM/YYYY"
@@ -686,7 +702,7 @@ $(function() {
 ';
 echo'
 $(function() {
-    $("#maxfecha").datetimepicker({
+    $(".form-control").datetimepicker({
                     locale: "es",
                     daysOfWeekDisabled: [0],
                     format: "DD/MM/YYYY"
@@ -699,6 +715,7 @@ $(function() {
 <script>	
 $(document).ready(function(){
 $("#btnclientes").click(function(){
+	$("#Hoja").show();
 	$("#informecentros").hide();
 	$("#informeestaciones").hide();
 	$("#informequioscos").hide();
@@ -707,6 +724,7 @@ $("#btnclientes").click(function(){
 	$("#Imprimir").show();
 });
 $("#btnquioscos").click(function(){
+	$("#Hoja").show();
 	$("#informecentros").hide();
 	$("#informeestaciones").hide();
 	$("#informeclientes").hide();
@@ -715,6 +733,7 @@ $("#btnquioscos").click(function(){
 	$("#Imprimir").show();
 });
 $("#btnestaciones").click(function(){
+	$("#Hoja").show();
 	$("#informecentros").hide();
 	$("#informeclientes").hide();
 	$("#informequioscos").hide();
@@ -724,6 +743,7 @@ $("#btnestaciones").click(function(){
 });
 $("#btncentros").click(function(){
 	var a = $("li.selected").attr("data-original-index");
+	$("#Hoja").show();
 	$("#informeclientes").hide();
 	$("#informeestaciones").hide();
 	$("#informequioscos").hide();
@@ -739,6 +759,7 @@ $("#btncentros").click(function(){
 	$("#Imprimir").show();
 });
 $("#btnempleados").click(function(){
+	$("#Hoja").show();
 	$("#informeclientes").hide();
 	$("#informeestaciones").hide();
 	$("#informequioscos").hide();
