@@ -15,42 +15,46 @@ require_once(__ROOT__.'/config.php');
                 <th>Tipo de lavado</th>
                 <th>Tipo de vehiculo</th>
                 <th>Forma de pago</th>
+                <th>Fecha</th>
                 <th>Hora</th>
                 <th>Costo</th>
               </tr>
             </thead>
             <tbody>
               <tr id="emp1">
-                <th>Huerga Emanuel</th>
-                <th>BASICO</th>
-                <th>PICKUP</th>
-                <th>CREDITO</th>
-                <th>9:00</th>
-                <th>$100</th>
+                <td>Huerga Emanuel</td>
+                <td>BASICO</td>
+                <td>PICKUP</td>
+                <td>CREDITO</td>
+                <td>02/06/16</td>
+                <td>9:00</td>
+                <td>$100</td>
                 <td style="text-align: center;">
                     <a href="'.$site_url.'/registrar-servicio" class="alert-box" rel="tipsy" title="Editar"><span class="glyphicon glyphicon-edit"></span></a>
                     <a href="javascript:void(0)" onclick="alert_box(\'emp1\');" class="alert-box" rel="tipsy" title="Eliminar"><span class="glyphicon glyphicon-remove"></span></a>
                 </td>
               </tr>
               <tr id="emp2">
-                <th>Silva Jose</th>
-                <th>ECOLOGICO</th>
-                <th>4X4</th>
-                <th>EFECTIVO</th>
-                <th>12:00</th>
-                <th>$90</th>
+                <td>Silva Jose</td>
+                <td>ECOLOGICO</td>
+                <td>4X4</td>
+                <td>EFECTIVO</td>
+                <td>13/06/16</td>
+                <td>12:00</td>
+                <td>$90</td>
                 <td style="text-align: center;">
                     <a href="'.$site_url.'/registrar-servicio" class="alert-box" rel="tipsy" title="Editar"><span class="glyphicon glyphicon-edit"></span></a>
                     <a href="javascript:void(0)" onclick="alert_box(\'emp2\');" class="alert-box" rel="tipsy" title="Eliminar"><span class="glyphicon glyphicon-remove"></span></a>
                 </td>
               </tr>
               <tr id="emp3">
-                <th>Golpeadora de Elite</th>
-                <th>COMPLETO</th>
-                <th>CAMION</th>
-                <th>DEBITO</th>
-                <th>16:00</th>
-                <th>$110</th>
+                <td>Golpeadora de Elite</td>
+                <td>COMPLETO</td>
+                <td>CAMION</td>
+                <td>DEBITO</td>
+                <td>28/06/16</td>
+                <td>16:00</td>
+                <td>$110</td>
                 <td style="text-align: center;">
                     <a href="'.$site_url.'/registrar-servicio" class="alert-box" rel="tipsy" title="Editar"><span class="glyphicon glyphicon-edit"></span></a>
                     <a href="javascript:void(0)" onclick="alert_box(\'emp3\');" class="alert-box" rel="tipsy" title="Eliminar"><span class="glyphicon glyphicon-remove"></span></a>

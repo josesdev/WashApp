@@ -51,7 +51,7 @@ if($menu_tpi == 1) {
               <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Encargado Externo <span class="caret"></span></a>
               <ul class="dropdown-menu active">
                 <li'; if (strpos($url_actual, 'confeccionar-hoja-de-ruta') !== false) echo ' class="active"'; echo '><a href="'.$site_url.'/confeccionar-hoja-de-ruta">Confeccionar hoja de ruta</a></li>
-                <li'; if (strpos($url_actual, 'lista-servicio') !== false) echo ' class="active"'; echo '><a href="'.$site_url.'/servicios/lista-servicio">Lista servicio realizdo</a></li>
+                <li'; if (strpos($url_actual, 'lista-servicio') !== false) echo ' class="active"'; echo '><a href="'.$site_url.'/servicios/lista-servicio">Lista servicio realizado</a></li>
                 <li'; if (strpos($url_actual, 'registrar-servicio') !== false) echo ' class="active"'; echo '><a href="'.$site_url.'/servicios/registrar-servicio">Registrar servicio realizdo</a></li>
               </ul>
             </li>';

@@ -42,7 +42,7 @@
     </div>
   </div>
 
-    <div id="corp-client">
+    <div id="corp-client" class="displayN">
       <div class="form-group no-margin-top">
         <label for="user_realname" class="col-lg-4 control-label">Nombre de la empresa</label>
         <div class="col-lg-6">
