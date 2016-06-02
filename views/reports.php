@@ -47,8 +47,8 @@ $dia_actual_20 = date('m/d/Y', (time() + (20 * 24 * 60 * 60)));
         <div id="Quioscos" class="tab-pane fade">
 		<div class="well bs-component">
 			<h3>Solicitar informe de quioscos</h3>
-			<br>
             <label for="user_name" class="col-lg-4 control-label">Seleccione quiosco/s</label>
+			<div class="col-lg-6">
 			<select class="selectpicker" name="type_quiosco">
 				<option>Todos los quioscos</option>
 				<option>Quiosco 1</option>
@@ -77,7 +77,18 @@ $dia_actual_20 = date('m/d/Y', (time() + (20 * 24 * 60 * 60)));
 				<option>Quiosco 24</option>
 				<option>Quiosco 25</option>
 			</select>
-			<br>
+			</div>
+			
+			<label for="user_name" class="col-lg-4 control-label">Desde</label>
+			<div class="col-lg-6">
+			<input type="text" size="4" class="form-control"></input>
+			</div>
+			<label for="user_name" class="col-lg-4 control-label">Hasta</label>
+			<div class="col-lg-6">
+			<input type="text" class="form-control"></input>
+			</div>
+	
+			
 			<div class="center">
 			<input type="submit" class="btn btn-raised btn-success" name="register" value="Crear informe de quioscos" id="btnquioscos"/>
 			</div>
@@ -87,8 +98,8 @@ $dia_actual_20 = date('m/d/Y', (time() + (20 * 24 * 60 * 60)));
         <div id="Estaciones" class="tab-pane fade">
 		<div class="well bs-component">
             <h3>Solicitar informe de estaciones</h3>
-			<br>
 			<label for="user_name" class="col-lg-4 control-label">Seleccione estación/es</label>
+			<div class="col-lg-6">
 			<select class="selectpicker" name="type_station">
 				<option>Todas las estaciones</option>
 				
@@ -123,7 +134,17 @@ $dia_actual_20 = date('m/d/Y', (time() + (20 * 24 * 60 * 60)));
 				<option>Estación 29</option>
 				<option>Estación 30</option>
 			</select>
-			<br>
+			</div>
+			
+			<label for="user_name" class="col-lg-4 control-label">Desde</label>
+			<div class="col-lg-6">
+			<input type="text" size="4" class="form-control"></input>
+			</div>
+			<label for="user_name" class="col-lg-4 control-label">Hasta</label>
+			<div class="col-lg-6">
+			<input type="text" class="form-control"></input>
+			</div>
+	
 			<div class="center">
 			<input type="submit" class="btn btn-raised btn-success" name="register" value="Crear informe de estaciones" id="btnestaciones"/>
 			</div>
@@ -132,11 +153,16 @@ $dia_actual_20 = date('m/d/Y', (time() + (20 * 24 * 60 * 60)));
         <div id="Empleados" class="tab-pane fade">
 		<div class="well bs-component">
             <h3>Solicitar informe de empleados</h3>
-			<br>
 			
-			Acá poner caja de búsqueda inteligente (?)
-			
-			<br>
+			<label for="user_name" class="col-lg-4 control-label">Desde</label>
+			<div class="col-lg-6">
+			<input type="text" size="4" class="form-control"></input>
+			</div>
+			<label for="user_name" class="col-lg-4 control-label">Hasta</label>
+			<div class="col-lg-6">
+			<input type="text" class="form-control"></input>
+			</div>
+
 			<div class="center">
 			<input type="submit" class="btn btn-raised btn-success" name="register" value="Crear informe de empleados" id="btnempleados"/>
 			</div>
@@ -144,12 +170,21 @@ $dia_actual_20 = date('m/d/Y', (time() + (20 * 24 * 60 * 60)));
         </div>
         <div id="Clientes" class="tab-pane fade">
 		<div class="well bs-component">
-			<div class="col-md-12">
-			<br>
+            <h3>Solicitar informe de clientes</h3>
+
+			
+			<label for="user_name" class="col-lg-4 control-label">Desde</label>
+			<div class="col-lg-6">
+			<input type="text" size="4" class="form-control"></input>
+			</div>
+			<label for="user_name" class="col-lg-4 control-label">Hasta</label>
+			<div class="col-lg-6">
+			<input type="text" class="form-control"></input>
+			</div>
+	
 			<div class="center">
 			<input type="submit" class="btn btn-raised btn-success" name="register" value="Crear informe de clientes" id="btnclientes"/>
 			</div>
-        </div>
 		</div>
 	</div>
 	</div>
