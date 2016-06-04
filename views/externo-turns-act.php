@@ -6,9 +6,20 @@ $dia_actual_d = date('m/d/Y', time());
 $dia_actual_20_d = date('m/d/Y', (time() + (20 * 24 * 60 * 60)));
 ?>
 <div class="well bs-component">
-    <div class="center">
-        <h2>Centro de lavado: WashApp Centro</h2>
-        <h3 class="center">Actualizar estados de turnos de lavado</h3>
+    <div class="col-lg-12 center">
+        <h2 class="center">Actualizar estados de turnos de lavado</h2>
+        <div class="col-lg-6" style="text-align: right;">
+            <h3>Seleccionar estación móvil</h3>
+        </div>
+        <div class="col-lg-2">
+          <select class="selectpicker">
+            <option>Estación móvil 1</option>
+            <option>Estación móvil 2</option>
+            <option>Estación móvil 3</option>
+            <option>Estación móvil 4</option>
+            <option>Estación móvil 5</option>
+          </select>
+        </div>
     </div>
 
     <form class="form-horizontal center">
@@ -130,7 +141,7 @@ $dia_actual_20_d = date('m/d/Y', (time() + (20 * 24 * 60 * 60)));
 </div>
 
         <div class="center">
-        <button class="btn btn-raised btn-success" name="login"  data-toggle="snackbar" data-style="toast" data-content="¡Turno registrado exitosamente!" onclick="return false;">Guardar cambios</button>
+        <button class="btn btn-raised btn-success" name="login"  data-toggle="snackbar" data-style="toast" data-content="¡Turnos actualizados exitosamente!" onclick="return false;">Guardar cambios</button>
       </div>
 </div>
 

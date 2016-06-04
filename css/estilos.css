@@ -92,15 +92,12 @@ body {
 	margin-top: 1.2%;
 }
 
-<<<<<<< HEAD
-=======
 .form-group .client {
 	float: left;
 	margin: 6px 0;
 	width: 50%;
 }
 
->>>>>>> origin/master
 #corp-client {
 	display: none;
 }
@@ -194,4 +191,8 @@ body {
 
 .i{ font-style: italic;
    color:  #1a1a1a;
+}
+
+.navbar .dropdown-menu li > a, .navbar.navbar-default .dropdown-menu li > a {
+	padding: 6px 16px!important;
 }

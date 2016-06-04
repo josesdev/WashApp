@@ -110,7 +110,6 @@ $url_actual = $_SERVER['REQUEST_URI'];
     <script src="'.$site_url.'/js/ripples.min.js"></script>
     <script src="'.$site_url.'/js/material.min.js"></script>';
 
-    if (strpos($url_actual, 'lista-empleados') !== false or strpos($url_actual, 'operador/ver-turnos') !== false)
     echo '
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery.tipsy/1.0.3/jquery.tipsy.min.css" type="text/css" />';
 

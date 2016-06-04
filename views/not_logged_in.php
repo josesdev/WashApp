@@ -15,6 +15,7 @@ require_once(__ROOT__.'/config.php');
     <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
     <li data-target="#myCarousel" data-slide-to="1"></li>
     <li data-target="#myCarousel" data-slide-to="2"></li>
+    <li data-target="#myCarousel" data-slide-to="3"></li>
   </ol>
 
   <?php
@@ -22,6 +23,10 @@ require_once(__ROOT__.'/config.php');
   <!-- Wrapper for slides -->
   <div class="carousel-inner" role="listbox">
     <div class="item active">
+      <img src="'. $site_url .'/images/5.jpg" alt="Chania">
+    </div>
+
+    <div class="item">
       <img src="'. $site_url .'/images/3.png" alt="Chania">
     </div>
 

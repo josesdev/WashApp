@@ -29,31 +29,31 @@ $hora_3 = @$todayh[hours] - 2;
           <table class="table">
             <thead>
               <tr>
-                <th>Cliente</th>
                 <th>Hora</th>
+                <th>Cliente</th>
                 <th>Tipo de vehículo</th>
                 <th>Tipo de lavado</th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <td>Ramírez, Karina Anyelén</td>
                 <?php
                 echo '
-                <td>'.$hora_3.':00</td>';
+                <td>9:00</td>';
                 ?>
+                <td>Ramírez, Karina Anyelén</td>
                 <td>Camioneta 4x4</td>
                 <td>Completo</td>
               </tr>
               <tr>
-                <td>Huerga, Christian Emanuel</td>
                 <td>15:00</td>
+                <td>Huerga, Christian Emanuel</td>
                 <td>Sedán</td>
                 <td>Básico</td>
               </tr>
               <tr>
-                <td>Schneider, Miguel Eduardo</td>
                 <td>18:00</td>
+                <td>Gon, Mauricio</td>
                 <td>Pickup</td>
                 <td>Ecológico</td>
               </tr>
@@ -68,8 +68,8 @@ $hora_3 = @$todayh[hours] - 2;
           <table class="table">
             <thead>
               <tr>
-                <th>Cliente</th>
                 <th>Hora</th>
+                <th>Cliente</th>
                 <th>Tipo de vehículo</th>
                 <th>Cantidad</th>
                 <th>Tipo de lavado</th>
@@ -77,22 +77,22 @@ $hora_3 = @$todayh[hours] - 2;
             </thead>
             <tbody>
               <tr>
-                <td>Pollero, Hector Emiliano</td>
                 <td>09:00</td>
+                <td>Pollero, Hector Emiliano</td>
                 <td>Camioneta 4x4</td>
                 <td>2</td>
                 <td>Completo</td>
               </tr>
               <tr>
-                <td>Pollero, Hector Emiliano</td>
                 <td>09:00</td>
+                <td>Pollero, Hector Emiliano</td>
                 <td>Sedán</td>
                 <td>6</td>
                 <td>Ecológico</td>
               </tr>
               <tr>
-                <td>Silva, José Gabriel</td>
                 <td>12:00</td>
+                <td>Silva, José Gabriel</td>
                 <td>Camión</td>
                 <td>3</td>
                 <td>Completo</td>

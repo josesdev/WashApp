@@ -95,11 +95,19 @@ if(isset($_GET['action'])) {
     }
     else
     if ($_GET['action'] == 'registrar-servicio') {
-        include("views/registrar-servicio.php");
+        include("views/externo-register-service.php");
+    }
+    else
+    if ($_GET['action'] == 'editar-servicio') {
+        include("views/externo-edit-service.php");
     }
     else
     if ($_GET['action'] == 'lista-servicio') {
-        include("views/lista-servicio.php");
+        include("views/externo-list-services.php");
+    }
+    else
+    if ($_GET['action'] == 'externo-actualizar-turnos') {
+        include("views/externo-turns-act.php");
     }
     else
     if ($_GET['action'] == 'lista-insumos') {

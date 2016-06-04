@@ -28,7 +28,7 @@ require_once(__ROOT__.'/config.php');
       <div class="form-group">
         <label for="birthday" class="col-lg-5 control-label">Fecha de nacimiento</label>
         <div class="col-lg-5">
-          <input type="text" class="form-control" id="birthday" value="14/05/1995"></input>
+          <input type="text" class="form-control" id="birthday" value="14/05/1996"></input>
         </div>
       </div>
       <div class="form-group">
@@ -37,7 +37,6 @@ require_once(__ROOT__.'/config.php');
           <select class="selectpicker" name="em_sex">
             <option>Masculino</option>
             <option selected="selected">Femenino</option>
-            <option>Ecológico</option>
           </select>
         </div>
       </div>
