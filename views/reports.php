@@ -6,15 +6,34 @@ $dia_actual_20 = date('m/d/Y', (time() + (20 * 24 * 60 * 60)));
 
 
 <ul class="nav nav-tabs" id="Cosas">
-	<li class="active"><a data-toggle="tab" href="#Centros">Centros</a></li>
+	<li class="active"><a data-toggle="tab" href="#Todos">Global</a></li>
+    <li><a data-toggle="tab" href="#Centros">Centros</a></li>
     <li><a data-toggle="tab" href="#Quioscos">Quioscos</a></li>
     <li><a data-toggle="tab" href="#Estaciones">Estaciones</a></li>
     <li><a data-toggle="tab" href="#Empleados">Empleados</a></li>
     <li><a data-toggle="tab" href="#Clientes">Clientes</a></li>
+    <li><a data-toggle="tab" href="#Insumos">Insumos</a></li>
 </ul>
 
     <div class="tab-content">
-        <div id="Centros" class="tab-pane fade in active">
+        <div id="Todos" class="tab-pane fade in active">
+		<div class="well bs-component">
+            <h3>Solicitar informe global</h3>
+			<label for="user_name" class="col-lg-4 control-label">Desde</label>
+			<div class="col-lg-6">
+			<input type="text" size="4" class="form-control"></input>
+			</div>
+			<label for="user_name" class="col-lg-4 control-label">Hasta</label>
+			<div class="col-lg-6">
+			<input type="text" class="form-control"></input>
+			</div>
+	
+			<div class="center">
+			<input type="submit" class="btn btn-raised btn-success" name="register" value="Crear informe global" id="btnglobal"/>
+			</div>
+		</div>
+	</div>
+	<div id="Centros" class="tab-pane fade">
 		<div class="well bs-component">
             <h3>Solicitar informe de centros</h3>
             <label for="user_name" class="col-lg-4 control-label">Seleccione centro</label>
@@ -186,11 +205,123 @@ $dia_actual_20 = date('m/d/Y', (time() + (20 * 24 * 60 * 60)));
 			<input type="submit" class="btn btn-raised btn-success" name="register" value="Crear informe de clientes" id="btnclientes"/>
 			</div>
 		</div>
-	</div>
+		</div>
+		<div id="Insumos" class="tab-pane fade">
+		
+		<div class="well bs-component">
+        <div>
+			<h3 class="center">Solicitar informe de insumos consumidos</h3> 
+			<div class="izq">
+			<p class="sub" style="color:#009688 ;"> Seleccionar producto</p>
+			  <div class="der formm">
+				<select class="selectpicker sub">
+					<option class="todos" style="color: #8F8F8F">Todos</option>
+					<option data-divider="true"></option>
+					<option class="arom">Aromatizante</option>    
+					<option class="det">Detergente concentrado sin fosfatos</option>
+					<option class="jab">Jabon concentrado</option>
+					<option class="llanta">Limpia llantas</option>
+					<option class="sham">Shampoo Siliconado</option>
+				</select>
+			  </div>
+			</div>
+			
+			<div class="izq">
+			<p class="sub" style="color:#009688 ;"> Seleccionar lugar</p>
+			  <div class="der formm">
+				<select class="selectpicker sub">
+					<option class="op0" style="color: #8F8F8F">Todos</option>
+					<option data-divider="true"></option>
+					<option class="op1">Centros</option>    
+					<option class="op2">Quioscos</option>
+					<option class="op3">Estaciones</option>
+				</select>
+			  </div>
+			</div>
+			
+			</div>
+			<label for="user_name" class="col-lg-4 control-label">Desde</label>
+			<div class="col-lg-6">
+			<input type="text" size="4" class="form-control"></input>
+			</div>
+			<label for="user_name" class="col-lg-4 control-label">Hasta</label>
+			<div class="col-lg-6">
+			<input type="text" class="form-control"></input>
+			</div>
+
+			<div class="center">
+			<input type="submit" class="btn btn-raised btn-success" name="register" value="Crear informe de insumos" id="btninsumos"/>
+			</div>
+			
+		</div>
+			
+		</div>
 	</div>
 	
 	<div class="well bs-component" id="Hoja"  style='display:none;'>
-
+	<p align=left>
+	<?php
+          echo '
+          <a class="navbar-brand" href="'. $site_url .'" style="font-size: 28px;"><img src="'.$site_url.'/images/logo_w.png" height="30" width="30" style="float: left; margin-right: 10px;"/> WashApp</a>';
+          ?>
+	</p>
+	<br>
+	<br>
+	<DIV ALIGN=left>Desde: 11/11/2016 Hasta: 12/12/2016</DIV>
+	<DIV ALIGN=left>Fecha de impresión: 06/06/2016</DIV>
+	
+	<div class="w3-container" id="insumosxcentro"  style='display:none;'>
+			<h3 class="center">Insumos consumidos en Centros</h3>
+			<br>
+          <table class="table">
+            <thead>
+            <?php
+            echo'
+				<tr>
+					<th>Centro</th>
+					<th>Producto</th>
+					<th>Cantidad</th>
+					<th>Gastos</th>
+				</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Washapp Centenario</td>
+						<td>Aromatizante</td>
+						<td>25</td>
+						<td>-$600</td>
+					</tr>
+					<tr>
+						<td>Washapp Centenario</td>
+						<td>Detergente concentrado sin fosfatos</td>
+						<td>20</td>
+						<td>-$290</td>
+					</tr>
+					<tr>
+						<td>Washapp Centenario</td>
+						<td>Jabón concentrado</td>
+						<td>10</td>
+						<td>-$560</td>
+					</tr>
+					<tr>
+						<td>Washapp Centenario</td>
+						<td>Limpiallantas</td>
+						<td>11</td>
+						<td>-$780</td>
+					</tr>
+					<tr>
+						<td>Washapp Centenario</td>
+						<td>Shampoo Siliconado</td>
+						<td>19</td>
+						<td>-$900</td>
+					</tr>
+				</tbody>
+              ';
+              ?>
+            </tbody>
+          </table>
+	</div>
+	
 	
 	<div class="w3-container" id="informeclientes"  style='display:none;'>
 			<h3 class="center">Lista de clientes particulares</h3>
@@ -330,6 +461,11 @@ $dia_actual_20 = date('m/d/Y', (time() + (20 * 24 * 60 * 60)));
                 <td>Washapp Corrientes</td>
                 <td>159</td>
                 <td>$10000</td>
+              </tr>
+              <tr id="totalcentros" bgcolor="grey">
+                <td>Total</td>
+                <td>459</td>
+                <td>$37700</td>
               </tr>
               ';
               ?>
@@ -474,6 +610,11 @@ $dia_actual_20 = date('m/d/Y', (time() + (20 * 24 * 60 * 60)));
 					<td>Quiosco 25</td>
 					<td>26</td>
 					<td>$746</td>
+					</tr>
+					<tr id="totalquioscos" bgcolor="grey">
+					<td>Total</td>
+					<td>300</td>
+					<td>$15040</td>
 					</tr>
               ';
               ?>
@@ -645,6 +786,11 @@ $dia_actual_20 = date('m/d/Y', (time() + (20 * 24 * 60 * 60)));
 					<td>33</td>
 					<td>$267</td>
 					</tr>
+					<tr id="totalestaciones" bgcolor="grey">
+					<td>Total</td>
+					<td>450</td>
+					<td>$19800</td>
+					</tr>
               ';
               ?>
             </tbody>
@@ -749,8 +895,19 @@ $(function() {
 
 <script>	
 $(document).ready(function(){
+$("#btnglobal").click(function(){
+	$("#Hoja").show();
+	$("#insumosxcentro").hide();$("#insumosxestacion").hide();$("#insumosxquiosco").hide();
+	$("#informecentros").show();
+	$("#informeestaciones").show();
+	$("#informequioscos").show();
+	$("#informeempleados").hide();
+	$("#informeclientes").hide();
+	$("#Imprimir").show();
+});
 $("#btnclientes").click(function(){
 	$("#Hoja").show();
+	$("#insumosxcentro").hide();$("#insumosxestacion").hide();$("#insumosxquiosco").hide();
 	$("#informecentros").hide();
 	$("#informeestaciones").hide();
 	$("#informequioscos").hide();
@@ -760,6 +917,7 @@ $("#btnclientes").click(function(){
 });
 $("#btnquioscos").click(function(){
 	$("#Hoja").show();
+	$("#insumosxcentro").hide();$("#insumosxestacion").hide();$("#insumosxquiosco").hide();
 	$("#informecentros").hide();
 	$("#informeestaciones").hide();
 	$("#informeclientes").hide();
@@ -769,6 +927,7 @@ $("#btnquioscos").click(function(){
 });
 $("#btnestaciones").click(function(){
 	$("#Hoja").show();
+	$("#insumosxcentro").hide();$("#insumosxestacion").hide();$("#insumosxquiosco").hide();
 	$("#informecentros").hide();
 	$("#informeclientes").hide();
 	$("#informequioscos").hide();
@@ -779,6 +938,7 @@ $("#btnestaciones").click(function(){
 $("#btncentros").click(function(){
 	var a = $("li.selected").attr("data-original-index");
 	$("#Hoja").show();
+	$("#insumosxcentro").hide();$("#insumosxestacion").hide();$("#insumosxquiosco").hide();
 	$("#informeclientes").hide();
 	$("#informeestaciones").hide();
 	$("#informequioscos").hide();
@@ -795,11 +955,22 @@ $("#btncentros").click(function(){
 });
 $("#btnempleados").click(function(){
 	$("#Hoja").show();
+	$("#insumosxcentro").hide();$("#insumosxestacion").hide();$("#insumosxquiosco").hide();
 	$("#informeclientes").hide();
 	$("#informeestaciones").hide();
 	$("#informequioscos").hide();
 	$("#informecentros").hide();
 	$("#informeempleados").show();
+	$("#Imprimir").show();
+});
+$("#btninsumos").click(function(){
+	$("#Hoja").show();
+	$("#informeclientes").hide();
+	$("#informeestaciones").hide();
+	$("#informequioscos").hide();
+	$("#informecentros").hide();
+	$("#informeempleados").hide();
+	$("#insumosxcentro").show();
 	$("#Imprimir").show();
 });
 });
