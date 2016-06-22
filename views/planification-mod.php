@@ -7,7 +7,10 @@ $dia_actual_20 = date('m/d/Y', (time() + (20 * 24 * 60 * 60)));
 <div class="col-lg-offset-3 col-lg-6">
   <div class="well bs-component">
     <h3 class="center">Modificar plan de lavado</h3>
-    <form class="form-horizontal" method="post" action="/" name="loginform">
+<?php
+echo '
+    <form class="form-horizontal" method="post" action="'.$site_url.'" name="loginform">';
+?>
       <div class="form-group">
         <label for="user_name" class="col-lg-4 control-label">Tipo de vehículo</label>
         <div class="col-lg-6">
