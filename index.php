@@ -18,11 +18,11 @@ require_once('en.php');
 require_once('libraries/PHPMailer.php');
 
 // load the login class
-require_once('classes/Login.php');
+//require_once('classes/Login.php');
 
 // create a login object. when this object is created, it will do all login/logout stuff automatically
 // so this single line handles the entire login process.
-$login = new Login();
+//$login = new Login();
 
 // Segun la accion que quiera realizar incluimos un archivo u otro
 if(isset($_GET['action'])) {
@@ -133,10 +133,15 @@ if(isset($_GET['action'])) {
     if ($_GET['action'] == 'playa-actualizar-turnos') {
         include("views/playa-turns-act.php");
     }
+    else
+    if ($_GET['action'] == 'cerrar-sesion') {
+        include("cerrar-sesion.php");
+    }
 }
 // Si no hay accion mostramos el archivo para clientes logueados y no logueados
 else {
-
+    include("views/not_logged_in.php");
+    /*
     // ... ask if we are logged in here:
     if ($login->isUserLoggedIn() == true) {
         // the user is logged in. you can do whatever you want here.
@@ -148,5 +153,6 @@ else {
         // for demonstration purposes, we simply show the "you are not logged in" view.
         include("views/not_logged_in.php");
     }
+    */
 
 }

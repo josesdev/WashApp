@@ -26,7 +26,7 @@
         </div>
       </div>
       <div class="form-group center">
-        <input type="submit" class="btn btn-raised btn-success" name="login" value="Iniciar sesión" />
+        <button class="btn btn-raised btn-success" name="login" onclick="login_user();">Iniciar sesión</button>
       </div>
     </form>
 
@@ -38,5 +38,35 @@
     </div>
   </div>
 </div>';
+
+echo '
+<script type="text/javascript">
+
+function login_user() {
+    var login_user = $("#user_name").val();
+    if (login_user == "super") {
+      Cookies.set("menu", "super", { expires: 7, path: \''.$site_url.'\' });
+    }
+    if (login_user == "particular") {
+      Cookies.set("menu", "particular", { expires: 7, path: \''.$site_url.'\' });
+    }
+    else if (login_user == "corporativo") {
+      Cookies.set("menu", "corporativo", { expires: 7, path: \''.$site_url.'\' });
+    }
+    else if (login_user == "playa") {
+      Cookies.set("menu", "playa", { expires: 7, path: \''.$site_url.'\' });
+    }
+    else if (login_user == "externo") {
+      Cookies.set("menu", "externo", { expires: 7, path: \''.$site_url.'\' });
+    }
+    else if (login_user == "operador") {
+      Cookies.set("menu", "operador", { expires: 7, path: \''.$site_url.'\' });
+    }
+    else if (login_user == "administrador") {
+      Cookies.set("menu", "administrador", { expires: 7, path: \''.$site_url.'\' });
+    }
+  
+}
+</script>';
 
 include('_footer.php'); ?>
