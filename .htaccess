@@ -9,6 +9,7 @@ Rewriterule ^clientes/planificar-plan index.php?action=planificar-plan
 Rewriterule ^clientes/modificar-plan index.php?action=modificar-plan
 Rewriterule ^clientes/mis-turnos index.php?action=mis-turnos
 Rewriterule ^tipos-de-lavado index.php?action=tipos-de-lavado
+Rewriterule ^tipos-de-lavado-corporativo index.php?action=tipos-de-lavado-corporativo
 Rewriterule ^agregar-tipo-de-lavado index.php?action=agregar-tipo-de-lavado
 Rewriterule ^editar-tipo-de-lavado index.php?action=editar-tipo-de-lavado
 Rewriterule ^lista-empleados index.php?action=lista-empleados

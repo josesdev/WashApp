@@ -130,7 +130,7 @@ elseif($_COOKIE["menu"] == "corporativo") {
   <li'; if (strpos($url_actual, 'solicitar-plan') !== false) echo ' class="active"'; echo '><a href="'.$site_url.'/clientes/solicitar-plan">Solicitar plan</a></li>
   <li'; if (strpos($url_actual, 'planificar-plan') !== false) echo ' class="active"'; echo '><a href="'.$site_url.'/clientes/planificar-plan">Planificar plan</a></li>
   <li'; if (strpos($url_actual, 'modificar-plan') !== false) echo ' class="active"'; echo '><a href="'.$site_url.'/clientes/modificar-plan">Modificar plan</a></li>
-  <li'; if (strpos($url_actual, 'tipos-de-lavado') !== false) echo ' class="active"'; echo '><a href="'.$site_url.'/tipos-de-lavado">Ver tipos de lavado</a></li>
+  <li'; if (strpos($url_actual, 'tipos-de-lavado-corporativo') !== false) echo ' class="active"'; echo '><a href="'.$site_url.'/tipos-de-lavado-corporativo">Ver tipos de lavado</a></li>
     </ul>
   </li>
           </ul>

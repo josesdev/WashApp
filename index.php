@@ -50,6 +50,10 @@ if(isset($_GET['action'])) {
         include("views/wash_types.php");
     }
     else
+    if ($_GET['action'] == 'tipos-de-lavado-corporativo') {
+        include("views/wash_types_corp.php");
+    }
+    else
     if ($_GET['action'] == 'agregar-tipo-de-lavado') {
         include("views/wash_types_add.php");
     }
