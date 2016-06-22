@@ -141,7 +141,10 @@ $dia_actual_20_d = date('m/d/Y', (time() + (20 * 24 * 60 * 60)));
 </div>
 
         <div class="center">
-        <button class="btn btn-raised btn-success" name="login"  data-toggle="snackbar" data-style="toast" data-content="¡Turnos actualizados exitosamente!" onclick="return false;">Guardar cambios</button>
+      <?php
+          echo '
+      <a class="btn btn-raised btn-success" href="'. $site_url .'" role="button" data-content="¡Turno registrado exitosamente!" >Guardar cambios</a>'
+        ;?>
       </div>
 </div>
 

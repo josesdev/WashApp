@@ -146,7 +146,10 @@ echo '
         <strong>Recuerde que su plan de lavado será evaluado y un operador se comunicará con Usted dentro de las 48 hs.</strong>
       </div>
       <div class="center">
-        <input type="submit" class="btn btn-raised btn-success" name="login" value="Registrar plan" />
+      <?php
+          echo '
+      <a class="btn btn-raised btn-success" href="'. $site_url .'" role="button" data-content="¡Turno registrado exitosamente!" >Registrar plan</a>'
+        ;?>
       </div>
     </form>
   </div>

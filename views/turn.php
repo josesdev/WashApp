@@ -116,6 +116,9 @@ $(function() {
 ';
 ?>
 
+
+
+
 $(document).ready(function(){
     $("#type_sucursal").click(function(){
         $("#Tmovil").hide();
