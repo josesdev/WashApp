@@ -5,7 +5,7 @@ require_once(__ROOT__.'/config.php');
 <div class="col-lg-12">
   <div class="well bs-component" style="overflow:hidden;">
     <h3 class="center">Tipos de lavado</h3>
-
+    <div>
     <div class="col-lg-4">
         <h3 class="center">Básico</h3>
         <span class="glyphicon glyphicon-tint icon"></span>
@@ -16,7 +16,10 @@ require_once(__ROOT__.'/config.php');
                 <li>Jabón concetrado.</li>
                 <li>Aromatizante.</li>
             </ul>
+            <br />
             <ul>Costo: $100 ARS</ul>
+            <br />
+            
         </div>
     </div>
     <div class="col-lg-4 ">
@@ -31,6 +34,10 @@ require_once(__ROOT__.'/config.php');
                 <li>Suavizante.</li>
             </ul>
             <ul>Costo: $110 ARS</ul>
+            <br />
+            <br />
+            <p class="center"><u><b><a href="clientes/registrar-turno">Registrar turno</a></b></u></p>
+            
         </div>
     </div>
     <div class="col-lg-4 ">
@@ -42,10 +49,16 @@ require_once(__ROOT__.'/config.php');
                 <li>Agua.</li>
                 <li>Detergente neutro con silicona sin fosfato.</li>
             </ul>
+            <br />
             <ul>Costo: $90 ARS</ul>
         </div>
     </div>
+    <br />
+    <br />
+    </div>
+    
   </div>
+    
 </div>
 
 <?php 

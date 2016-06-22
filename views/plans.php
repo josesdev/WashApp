@@ -41,8 +41,14 @@ $dia_actual_20 = date('m/d/Y', (time() + (20 * 24 * 60 * 60)));
           <div id="period">
             <select class="selectpicker" name="wash_day">
                 <option id="day1">1 día a la semana</option>
+                <option id="day1">1 día por quincena</option>
+                <option id="day2">1 día por mes</option>
                 <option id="day2">2 días a la semana</option>
-                <option id="day3">3 días a la semana</option>
+                <option id="day2">2 días por quincena</option>
+                <option id="day2">2 días por mes</option>
+                <option id="day3">3 días a la semana</option>              
+                <option id="day2">3 días por quincena</option>
+                <option id="day2">3 días por mes</option>
             </select>
           </div>
         </div>
