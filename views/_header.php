@@ -31,8 +31,10 @@ $url_actual = $_SERVER['REQUEST_URI'];
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <meta name="description" content="">
     <meta name="author" content="">
-    <meta http-equiv="Pragma" content="no-cache">
+    <!--
+	<meta http-equiv="Pragma" content="no-cache">
     <meta http-equiv="expires" content="0">
+	-->
     <?php
     echo '
     <link rel="icon" href="'.$site_url.'/favicon.png">
