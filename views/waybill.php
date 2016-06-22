@@ -95,7 +95,7 @@ require_once(__ROOT__.'/config.php');
 									<td>Sedán</td>
 									<td>Fernando Fernández</td>
 								</tr>
-								<tr class="mostrar2">
+								<tr class="ocultar2">
 									<td><label><input type="checkbox" value=""></label></td>
 									<td>11:00</td>
 									<td>Don Bosco 1200<a href="https://goo.gl/maps/SjdwuNK58AU2">Ver en el mapa</a></td>

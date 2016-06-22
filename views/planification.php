@@ -8,7 +8,10 @@ $dia_actual_20 = date('m/d/Y', (time() + (20 * 24 * 60 * 60)));
   <div class="well bs-component">
     <h3 class="center">Planificar plan de lavado</h3>
 
-    <form class="form-horizontal" method="post" action="/" name="loginform">
+<?php
+echo '
+    <form class="form-horizontal" method="post" action="'.$site_url.'" name="loginform">';
+?>
     <div class="center">
       <div class="alert plan plan alert-dismissible alert-success">
         <button type="button" class="close" data-dismiss="alert">×</button>

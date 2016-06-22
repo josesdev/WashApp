@@ -7,7 +7,10 @@ $dia_actual_20 = date('m/d/Y', (time() + (20 * 24 * 60 * 60)));
 <div class="col-lg-offset-3 col-lg-6">
   <div class="well bs-component">
     <h3 class="center">Registrar turno de lavado</h3>
-    <form class="form-horizontal" method="post" action="index.php?action=registrar-turno" name="loginform">
+    <?php
+    echo '
+    <form class="form-horizontal" id="loginform" method="post" action="'.$site_url.'/clientes/mis-turnos" name="loginform">';
+    ?>
       <div class="form-group">
         <label for="user_name" class="col-lg-4 control-label">Tipo de vehículo</label>
         <div class="col-lg-6">
@@ -104,10 +107,7 @@ $dia_actual_20 = date('m/d/Y', (time() + (20 * 24 * 60 * 60)));
       </div>
 
       <div class="center">
-      <?php
-          echo '
-      <a class="btn btn-raised btn-success" href="'. $site_url .'" role="button" data-content="¡Turno registrado exitosamente!" >Registrar turno</a>'
-        ;?>
+        <button class="btn btn-raised btn-success" data-toggle="snackbar" data-style="toast" data-content="¡Turno registrado exitosamente!" onclick="setTimeout(intervalo, 1600); return false;">Registrar turno</button>
       </div>
     </div>
     </form>
@@ -133,6 +133,9 @@ else {
 }
 
 echo'
+function intervalo() {
+	document.loginform.submit();	
+}
 $(function() {
     $("#wash_day").datetimepicker({
                     locale: "es",
