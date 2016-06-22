@@ -18,6 +18,7 @@ require_once(__ROOT__.'/config.php');
             </ul>
             <br />
             <ul>Costo: $100 ARS</ul>
+            <p class="center"><b><a href="clientes/solicitar-plan">Solicitar plan</a></b></p>
             <br />
             
         </div>
@@ -34,9 +35,9 @@ require_once(__ROOT__.'/config.php');
                 <li>Suavizante.</li>
             </ul>
             <ul>Costo: $110 ARS</ul>
+            <p class="center"><b><a href="clientes/solicitar-plan">Solicitar plan</a></b></p>
             <br />
             <br />
-            <p class="center"><u><b><a href="clientes/registrar-turno">Registrar turno</a></b></u></p>
             
         </div>
     </div>
@@ -51,6 +52,7 @@ require_once(__ROOT__.'/config.php');
             </ul>
             <br />
             <ul>Costo: $90 ARS</ul>
+            <p class="center"><b><a href="clientes/solicitar-plan">Solicitar plan</a></b></p>
         </div>
     </div>
     <br />

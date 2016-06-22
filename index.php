@@ -46,7 +46,7 @@ if(isset($_GET['action'])) {
         include("views/turns-view.php");
     }
     else
-    if ($_GET['action'] == 'tipos-de-lavado') {
+    if ($_GET['action'] == 'tipos-de-lavado-particular') {
         include("views/wash_types.php");
     }
     else

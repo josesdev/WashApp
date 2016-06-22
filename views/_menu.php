@@ -110,14 +110,14 @@ elseif($_COOKIE["menu"] == "particular") {
   echo '
   <li'; if (strpos($url_actual, 'registrar-turno') !== false) echo ' class="active"'; echo '><a href="'.$site_url.'/clientes/registrar-turno">Registrar turno</a></li>
   <li'; if (strpos($url_actual, 'mis-turnos') !== false) echo ' class="active"'; echo '><a href="'.$site_url.'/clientes/mis-turnos">Mis turnos</a></li>
-  <li'; if (strpos($url_actual, 'tipos-de-lavado') !== false) echo ' class="active"'; echo '><a href="'.$site_url.'/tipos-de-lavado">Ver tipos de lavado</a></li>
+  <li'; if (strpos($url_actual, 'tipos-de-lavado') !== false) echo ' class="active"'; echo '><a href="'.$site_url.'/tipos-de-lavado-particular">Ver tipos de lavado</a></li>
     </ul>
   </li>
           </ul>
           <ul class="nav navbar-nav navbar-right">
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                Particular <b class="caret"></b>
+                Cliente Particular <b class="caret"></b>
               </a>
               <ul class="dropdown-menu">
                 <li><a href="'.$site_url.'/cerrar-sesion">Cerrar sesión</a></li>
@@ -137,7 +137,7 @@ elseif($_COOKIE["menu"] == "corporativo") {
           <ul class="nav navbar-nav navbar-right">
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                Corporativo <b class="caret"></b>
+                Cliente Corporativo <b class="caret"></b>
               </a>
               <ul class="dropdown-menu">
                 <li><a href="'.$site_url.'/cerrar-sesion">Cerrar sesión</a></li>
@@ -155,7 +155,7 @@ elseif($_COOKIE["menu"] == "playa") {
           <ul class="nav navbar-nav navbar-right">
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                Playa <b class="caret"></b>
+                Encargado de Playa <b class="caret"></b>
               </a>
               <ul class="dropdown-menu">
                 <li><a href="'.$site_url.'/cerrar-sesion">Cerrar sesión</a></li>
@@ -175,7 +175,7 @@ elseif($_COOKIE["menu"] == "externo") {
           <ul class="nav navbar-nav navbar-right">
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                Externo <b class="caret"></b>
+                Encargado Externo <b class="caret"></b>
               </a>
               <ul class="dropdown-menu">
                 <li><a href="'.$site_url.'/cerrar-sesion">Cerrar sesión</a></li>
