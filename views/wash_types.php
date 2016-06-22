@@ -35,7 +35,7 @@ require_once(__ROOT__.'/config.php');
                 <li>Suavizante.</li>
             </ul>
             <ul>Costo: $110 ARS</ul>
-            <p class="center"><b><a href="clientes/registrar-turno">Registrar turno</a></b></p>
+            <p class="center"><b><a href="clientes/registrar-turno-2">Registrar turno</a></b></p>
             <br />
             <br />
             
@@ -52,7 +52,7 @@ require_once(__ROOT__.'/config.php');
             </ul>
             <br />
             <ul>Costo: $90 ARS</ul>            
-            <p class="center"><b><a href="clientes/registrar-turno">Registrar turno</a></b></p>
+            <p class="center"><b><a href="clientes/registrar-turno-3">Registrar turno</a></b></p>
         </div>
     </div>
     <br />

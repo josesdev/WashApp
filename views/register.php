@@ -96,7 +96,7 @@
     <div class="form-group">
       <label for="user_phone" class="col-lg-4 control-label">Teléfono</label>
       <div class="col-lg-6">
-        <input id="user_phone" class="form-control" type="text" pattern="[0-9]{2,64}" name="user_phone" required />
+        <input id="user_phone" class="form-control" type="text" pattern="[0-9]{2,64}" name="user_phone" placeholder="Ejemplo: 379 4904501" required />
       </div>
     </div>
 

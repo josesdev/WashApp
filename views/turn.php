@@ -57,11 +57,27 @@ $dia_actual_20 = date('m/d/Y', (time() + (20 * 24 * 60 * 60)));
       <div class="form-group">
     	   <label for="user_name" class="col-lg-4 control-label">Tipo de lavado</label>
          <div class="col-lg-6">
-           <select class="selectpicker" name="type_vehicle">
-      	     <option>Básico</option>
-             <option>Completo</option>
-      	     <option>Ecológico</option>
-          </select>
+          <div id="o1" class="selLav">
+             <select class="selectpicker" name="type_l" id="type_l">
+               <option value="0" selected="">Básico</option>
+               <option value="1">Completo</option>
+               <option value="2">Ecológico</option>
+            </select>
+          </div>
+          <div id="o2" class="selLav displayN">
+             <select class="selectpicker" name="type_l" id="type_l">
+               <option value="0">Básico</option>
+               <option value="1" selected="">Completo</option>
+               <option value="2">Ecológico</option>
+            </select>
+          </div>
+          <div id="o3" class="selLav displayN">
+             <select class="selectpicker" name="type_l" id="type_l">
+               <option value="0">Básico</option>
+               <option value="1">Completo</option>
+               <option value="2" selected="">Ecológico</option>
+            </select>
+          </div>
         </div>
       </div>
       <div class="form-group">
@@ -100,6 +116,22 @@ $dia_actual_20 = date('m/d/Y', (time() + (20 * 24 * 60 * 60)));
 
 <script type="text/javascript">
 <?php
+if(isset($_GET['op'])) {
+  if($_GET['op'] == '2') {
+    $opcion = "o2";
+  }
+  else
+  if($_GET['op'] == '3') {
+    $opcion = "o3";
+  }
+  else {
+    $opcion = "o1";
+  }
+}
+else {
+  $opcion = "o1";
+}
+
 echo'
 $(function() {
     $("#wash_day").datetimepicker({
@@ -110,11 +142,30 @@ $(function() {
                     maxDate: "'.$dia_actual_20.'"
                 });
   });
+
+$(document).ready(function(){ 
+    var opcion = "'.$opcion.'";
+    if(opcion == "o2") { 
+        $("li.selected").removeClass("selected");
+        $("li[data-original-index=1]").addClass("selected");  
+        $(".filter-option pull-left").html("Completo");
+        $("#type_l").attr("title","Completo");
+        $(".selLav").addClass("displayN");
+        $("#"+opcion).removeClass("displayN").addClass("displayB"); 
+    }  
+  
+    if(opcion == "o3") { 
+        $("li.selected").removeClass("selected");
+        $("li[data-original-index=2]").addClass("selected");  
+        $(".filter-option pull-left").html("Ecológico");
+        $("#type_l").attr("title","Ecológico");
+        $(".selLav").addClass("displayN");
+        $("#"+opcion).removeClass("displayN").addClass("displayB"); 
+    }  
+  
+});  
 ';
 ?>
-
-
-
 
 $(document).ready(function(){
     $("#type_sucursal").click(function(){
@@ -129,3 +180,4 @@ $(document).ready(function(){
 </script>
 
 <?php include('_footer.php'); ?>
+
