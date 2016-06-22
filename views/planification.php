@@ -96,8 +96,11 @@ $dia_actual_20 = date('m/d/Y', (time() + (20 * 24 * 60 * 60)));
         </div>
     </div>
     <div class="center">
-        <input type="submit" class="btn btn-raised btn-success" name="login" value="Actualizar plan" />
-    </div>
+      <?php
+          echo '
+      <a class="btn btn-raised btn-success" href="'. $site_url .'" role="button" data-content="¡Turno registrado exitosamente!" >Actualizar plan</a>'
+        ;?>
+      </div>
     </div>
     </form>
   </div>

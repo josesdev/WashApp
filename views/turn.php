@@ -88,7 +88,10 @@ $dia_actual_20 = date('m/d/Y', (time() + (20 * 24 * 60 * 60)));
       </div>
 
       <div class="center">
-        <button class="btn btn-raised btn-success" name="login"  data-toggle="snackbar" data-style="toast" data-content="¡Turno registrado exitosamente!" onclick="return false;">Registrar turno</button>
+      <?php
+          echo '
+      <a class="btn btn-raised btn-success" href="'. $site_url .'" role="button" data-content="¡Turno registrado exitosamente!" >Registrar turno</a>'
+        ;?>
       </div>
     </div>
     </form>
@@ -109,6 +112,9 @@ $(function() {
   });
 ';
 ?>
+
+
+
 
 $(document).ready(function(){
     $("#type_sucursal").click(function(){

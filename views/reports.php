@@ -1378,8 +1378,8 @@ $dia_actual_20 = date('m/d/Y', (time() + (20 * 24 * 60 * 60)));
                 <th>CUIL</th>
                 <th>Dirección</th>
                 <th>E-mail</th>
-                <th>Sexo</th>
-                <th>Teléfono</th>
+                <th>Telefono</th>
+                
               </tr>
             </thead>
             <tbody>
@@ -1387,8 +1387,7 @@ $dia_actual_20 = date('m/d/Y', (time() + (20 * 24 * 60 * 60)));
                 <td>Gómez, Ernesto José</td>
                 <td>20-20127984-2</td>
                 <td>Solano López 450</td>
-                <td>ernestogomez@hotmail.com</td>
-                <td>Masculino</td>
+                <td>ernestogomez@hotmail.com</td>                
                 <td>3624876464</td>
               </tr>
               <tr id="clp2">
@@ -1396,7 +1395,7 @@ $dia_actual_20 = date('m/d/Y', (time() + (20 * 24 * 60 * 60)));
                 <td>20-22125986-2</td>
                 <td>San Lorenzo 1066</td>
                 <td>almiron22@hotmail.com</td>
-                <td>Masculino</td>
+                
                 <td>3624556454</td>
               </tr>
               <tr id="clp3">
@@ -1404,7 +1403,7 @@ $dia_actual_20 = date('m/d/Y', (time() + (20 * 24 * 60 * 60)));
                 <td>27-11258986-2</td>
                 <td>San José 22</td>
                 <td>destroyer_of_worlds@yahoo.com.ar</td>
-                <td>Femenino</td>
+                
                 <td>3624456253</td>
               </tr>
               <tr id="clp4">
@@ -1412,7 +1411,7 @@ $dia_actual_20 = date('m/d/Y', (time() + (20 * 24 * 60 * 60)));
                 <td>20-21227926-3</td>
                 <td>Rivadavia 103</td>
                 <td>milan_jorge@live.com.ar</td>
-                <td>masculino</td>
+                
                 <td>3624156258</td>
               </tr>
               ';

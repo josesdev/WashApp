@@ -85,7 +85,10 @@ $dia_actual = date('m/d/Y', time());
         </div>
       </div>
       <div class="center">
-        <button class="btn btn-raised btn-success" name="service"  data-toggle="snackbar" data-style="toast" data-content="¡Servicio registrado exitosamente!" onclick="return false;">Registrar Servicio</button>
+      <?php
+          echo '
+      <a class="btn btn-raised btn-success" href="'. $site_url .'" role="button" data-content="¡Turno registrado exitosamente!" >Registrar servicio</a>'
+        ;?>
       </div>
 
      
