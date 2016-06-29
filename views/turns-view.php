@@ -35,7 +35,10 @@ $hora_3 = date('H', time()) - 2;
                 </td>
               </tr>
               <tr id="plan-elim">
-                <td>20/06/2016 09:00 hs</td>
+                <?php
+                echo '
+                <td>30/06/2016 '.$hora_3.':00 hs</td>';
+                ?>
                 <td>Sedán</td>
                 <td>Estación móvil</td>
                 <td>San Lorenzo 1066, Resistencia</td>

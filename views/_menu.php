@@ -208,7 +208,7 @@ elseif($_COOKIE["menu"] == "administrador") {
   <li class="dropdown">
     <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Tipos de lavado <span class="caret"></span></a>
     <ul class="dropdown-menu active">
-      <li'; if (strpos($url_actual, 'tipos-de-lavado') !== false) echo ' class="active"'; echo '><a href="'.$site_url.'/tipos-de-lavado">Ver tipos de lavado</a></li>
+      <li'; if (strpos($url_actual, 'tipos-de-lavado') !== false) echo ' class="active"'; echo '><a href="'.$site_url.'/tipos-de-lavado-particular">Ver tipos de lavado</a></li>
       <li'; if (strpos($url_actual, 'agregar-tipo-de-lavado') !== false) echo ' class="active"'; echo '><a href="'.$site_url.'/agregar-tipo-de-lavado">Agregar tipo de lavado</a></li>
       <li'; if (strpos($url_actual, 'editar-tipo-de-lavado') !== false) echo ' class="active"'; echo '><a href="'.$site_url.'/editar-tipo-de-lavado">Editar tipo de lavado</a></li>
     </ul>
