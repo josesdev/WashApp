@@ -25,7 +25,7 @@
     <div class="form-group no-margin-top">
       <label for="user_realname" class="col-lg-4 control-label">Apellido y Nombre</label>
       <div class="col-lg-6">
-        <input id="user_realname" class="form-control" type="text" pattern="[a-zA-Z]{2,64}" name="user_realname" required />
+        <input id="user_realname" class="form-control" type="text" pattern="[a-z A-Z]{2,64}" name="user_realname" required />
       </div>
     </div>
     <div class="form-group">
